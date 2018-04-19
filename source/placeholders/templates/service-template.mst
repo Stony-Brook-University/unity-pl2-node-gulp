@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="service-card box-card no-border noPadding">
+            <div>
+                <h3 class="box-card--heading red display--flex">{{title}} {{# hasStatus }}<div class="status-indicator--button bg-emerald" role="alert">ONLINE</div>{{/hasStatus}}</h3>
+                {{#categories}}
+                <strong class="box-card--subheading">Category:</strong> {{categories}}
+                <br>
+                {{/categories}}
+                {{#audience}}
+                <strong class="box-card--subheading">Audience:</strong> {{audience}}
+                <br>
+                {{/audience}}
+
+            </div>
+            <div class="box-card--content">
+                {{introduction}}
+            </div>
+
+            {{# hasStickers }}
+            <strong class="box-card--subheading">Stickers:</strong>
+            {{/ hasStickers }}
+
+            {{# stickers }}
+             <span class="label label-default">{{name}}</span>
+            {{/ stickers }}
+
+            {{# hasHashtags}}
+            <strong class="box-card--subheading">Hashtags:</strong>
+            {{/ hasHashtags }}
+
+            {{ #hashtags }}
+                    <span class="label label-primary">{{name}}</span>
+            {{ /hashtags }}
+            <br>
+            <div class="box-card--cta">
+                <a href="{{url}}" class="arrow-link">Go to Service Page</a>
+            </div>
+
+            <hr class="divider-gray">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+//TODO: Needs refactoring
+.polaroid-card {
+    display: block;
+    border: #B7B5B6 1px solid;
+    background: #FFF;
+    -webkit-box-shadow: 0px 0px 8px #B7B5B6;
+    box-shadow: 0px 0px 8px #B7B5B6;
+    text-align: center;
+    position: relative;
+    padding: 1%;
+    margin: 1em 0;
+
+}
+
+.polaroid-card--image {
+    @extend .card--image;
+    width: 100%;
+}
+
+.polaroid-card--heading {
+    @extend .card--heading;
+    color: $red;
+}
+
+a.polaroid-card:hover {
+    -webkit-box-shadow: 0px 0px 8px $red;
+    box-shadow: 0px 0px 8px $red;
+}
+
+.polaroid-card--text {
+    @extend .card--text;
+    color: #000;
+}
+
+
+/*
+        span {
+            padding: 5px 10.99530449186776%;
+            display: block;
+        }
+    }
+
+    li:hover {
+        -webkit-box-shadow: 0px 0px 8px #990000;
+        box-shadow: 0px 0px 8px #990000;
+    }
+}
+*/

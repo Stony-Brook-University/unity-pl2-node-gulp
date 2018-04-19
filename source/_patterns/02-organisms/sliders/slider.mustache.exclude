@@ -1,0 +1,14 @@
+<section class="fluffy bg-x-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="slick-slider single-item">
+                <div><img src="http://placehold.it/1200x300&text=This Is A Single Slider" class="img-responsive"></div>
+                <div><img src="http://placehold.it/1200x300&text=How Many Times Can You Slide" class="img-responsive"></div>
+                <div><img src="http://placehold.it/1200x300&text=Click or Tap and Drag With Your Mouse" class="img-responsive"></div>
+                <div><img src="http://placehold.it/1200x300&text=Or Use The Arrows To Slide" class="img-responsive"></div>
+                <div><img src="http://placehold.it/1200x300&text=Or The Little Dots Below" class="img-responsive"></div>
+                <div><img src="http://placehold.it/1200x300&text=Or You Can Just Not Use A Slider At All And Make Everyone's Life A Little Bit Easier" class="img-responsive"></div>
+            </div>
+        </div>
+    </div>
+</section>

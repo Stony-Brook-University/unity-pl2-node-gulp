@@ -1,0 +1,17 @@
+<div class="drop-accordion-card">
+    <div class="drop-accordion-card--tab">
+      <div class="display--flex-mobile">
+        <span class="drop-accordion-card--icon sbuicon-angle-down"></span>
+        <span class="drop-accordion-card--headline">{{headline.medium}}</span>
+      </div>
+    </div>
+    <div class="drop-accordion-card--content-wrap hide-accessible">
+        <div class="drop-accordion-card--content">
+            {{{paragraph.double}}} {{# cta }}
+            <div class="simple-blurb--cta">
+                <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+            </div>
+            {{/ cta }}
+        </div>
+    </div>
+</div>

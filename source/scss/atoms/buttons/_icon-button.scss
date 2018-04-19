@@ -1,0 +1,13 @@
+/*EXPLORE BUTTON*/
+
+.icon-button {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 1em;
+    background: rgba(0, 0, 0, .4);
+    &:hover {
+        background: rgba(0, 0, 0, .8);
+        color: #fff;
+    }
+    .icon-button--icon {}
+}

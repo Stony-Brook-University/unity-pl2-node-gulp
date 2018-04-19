@@ -1,0 +1,72 @@
+
+.event-stamp-button {
+  width: 100%;
+  margin-bottom: 1em;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-top: 2px solid transparent;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255,255,255,0.2);
+    transition: .3s ease all;
+    border-top: 2px solid $red;
+  }
+}
+
+  .event-stamp-button--date {
+    width: 100px;
+    min-width: 100px;
+    background-color: $red;
+    border: 1px solid $red;
+    margin-right: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    font-family: $font-alt;
+}
+
+.event-stamp-button--month {
+  background-color: $red;
+  font-weight: 900;
+  color: $white;
+  display: inline-block;
+  padding: 5px 5px 0 5px;
+  width: 100%;
+}
+
+.event-stamp-button--day {
+  display: inline-block;
+  font-family: $font-alt;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: $white;
+  padding: 0px 10px 10px 10px;
+  background-color: $red;
+}
+
+
+.event-stamp-button--text {
+  font-weight: 900;
+  line-height: 1em;
+
+  a {
+    color: $dark-gray;
+
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+}
+
+.event-stamp-button--text.section-themeable {
+  color: #fff !important;
+
+  a {
+    color: #fff !important;
+  }
+  a:visited {
+    color: #fff !important;
+  }
+}

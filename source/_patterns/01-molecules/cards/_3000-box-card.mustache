@@ -1,0 +1,24 @@
+<div class="box-card" data-match-height="box-card">
+
+    {{# showimage }}
+    <div class="box-card--image-wrap">
+    <img class="box-card--image" src="{{img.landscape-4x3.src}}" />
+    </div>
+    {{/showimage}}
+
+    <div data-match-height="box-card--headings">
+        <h3 class="box-card--heading">{{headline.short}}</h3>
+            <strong class="box-card--subheading">{{headline.medium}}</strong>
+    </div>
+
+    <div class="box-card--content" data-match-height="box-card--content">
+        {{{paragraph.medium}}}
+    </div>
+
+                      {{# cta }}
+                      <div class="box-card--cta">
+                          <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+    </div>
+    {{/ cta }}
+
+                </div>

@@ -1,0 +1,28 @@
+<div class="alert alert-info">
+    <p>
+        The <mark>classic-blurb</mark>, is an iteration of the simple blurb, accept the icon is positioned to the left of the content. This is simply a matter of design preferences. However keep in my mind it is probably not wise to mix and match <mark>classy-blurbs</mark> and <mark>simple-blurbs</mark> as you might disrupt the rythym of your content.
+    </p>
+</div>
+
+{{> molecules-classic-blurb(showicon:true, headline.medium:"Classic Blurbs Barrels of Monkeys!", headline.short:"So many variants") }}
+
+<div class="row">
+
+{{# listItems.three }}
+    <div class="col-sm-12 col-md-6 col-lg-4">
+            {{> molecules-classic-blurb(showicon:true) }}
+    </div>
+{{/ listItems.three }}
+
+</div>
+
+
+<div class="row">
+
+{{# listItems.two }}
+    <div class="col-sm-12 col-md-6 col-lg-6">
+            {{> molecules-classic-blurb(showimg:true) }}
+    </div>
+{{/ listItems.two }}
+
+</div>

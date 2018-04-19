@@ -1,0 +1,88 @@
+/*a, a:visited, a:active {
+    color: $red;
+    text-decoration: none;
+}
+
+a:hover, a.selected {
+    color: $dark-gray;
+}*/
+
+a.arrow-link:after {
+    display: inline-block;
+    content: "\f101";
+    margin: 0 0 0 8px;
+    @extend .sbuicon;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+}
+
+a.ellipsis-link:after {
+    display: inline-block;
+    content: "...";
+    margin: 0 0 0 0px;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+}
+
+.dashed-link {
+    border-bottom: .1em dashed;
+    color: $dark-gray;
+    border-bottom: .1em dashed #333;
+
+    &:hover,
+    &:focus {
+        color: $red;
+        border-bottom: none; //I think we should remove this (Rich)
+
+    }
+}
+
+a[href$=".pdf"].file-link:after {
+    content: "\f1c1";
+    @extend .sbuicon-after;
+}
+
+a[href$=".xls"].file-link:after,
+a[href$=".xlsx"].file-link:after {
+    content: "\f1c3";
+    @extend .sbuicon-after;
+}
+
+a[href$=".doc"].file-link:after,
+a[href$=".docx"].file-link:after {
+    content: "\f1c2";
+    @extend .sbuicon-after;
+}
+
+a[href$=".ppt"].file-link:after,
+a[href$=".pptx"].file-link:after {
+    content: "\f1c4";
+    @extend .sbuicon-after;
+}
+
+//file-link-before
+
+a[href$=".pdf"].file-link-before:before {
+    content: "\f1c1";
+    @extend .sbuicon;
+}
+
+a[href$=".xls"].file-link-before:before,
+a[href$=".xlsx"].file-link-before:before {
+    content: "\f1c3";
+    @extend .sbuicon;
+}
+
+a[href$=".doc"].file-link-before:before,
+a[href$=".docx"].file-link-before:before {
+    content: "\f1c2";
+    @extend .sbuicon;
+}
+
+a[href$=".ppt"].file-link-before:before,
+a[href$=".pptx"].file-link-before:before {
+    content: "\f1c4";
+    @extend .sbuicon;
+}

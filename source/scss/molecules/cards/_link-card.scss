@@ -1,0 +1,57 @@
+.link-card {
+
+	text-align: left;
+	margin-bottom: 2em;
+
+	ul.link-card-item {
+		margin-left: 0;
+
+		li {
+		list-style: none;
+		margin-left: none;
+
+			a {
+				color: $dark-gray;
+
+				&:hover,
+				&:focus {
+					color: $red;
+					transition: .3s ease all;
+				}
+
+			}
+		}
+	}
+	.link-card--icon {
+
+		font-size: 3em;
+		padding: 1em 0;
+		color: $red;
+	}
+
+	.link-card--heading {
+		font-size: 1em;
+		color: $dark-gray;
+		font-family: $font-alt;
+		font-weight: 400;
+
+	}
+
+	.link-card--text {
+
+
+		padding: .2em;
+
+		ul, ul li
+		{
+			@extend .list-style-none;
+
+		}
+
+		ul li
+		{
+			padding: 0.25em 0;
+		}
+
+	}
+}

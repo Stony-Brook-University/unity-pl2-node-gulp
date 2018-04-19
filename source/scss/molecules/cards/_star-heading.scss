@@ -1,0 +1,39 @@
+.star-heading-card {
+
+    .star-heading-card--heading-wrap {
+        background-color: #000;
+        height: 34px;
+        border-top-right-radius: 15px;
+    }
+
+    .star-heading-card--heading {
+        padding: 3px 10px;
+        color: #fff;
+        border: 0px;
+        font-family: Calibri;
+        font-weight: normal;
+        font-size: 1.7em;
+    }
+
+    .star-heading-card--heading-red-bar {
+        background-image: url("../images/star-title/red-star.gif");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        height: 13px;
+        background-color: #990000;
+    }
+
+    .star-heading-card--red-triangle {
+        background-image: url("../images/star-title/red-triangle.gif");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        color: #fff;
+        height: 15px;
+        margin-bottom: 5px;
+    }
+
+    .star-heading-card--image img{
+        width: 100%;
+        height: auto;
+    }
+}

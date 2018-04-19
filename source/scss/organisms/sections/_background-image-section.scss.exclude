@@ -1,0 +1,30 @@
+.background-image-section-left, .background-image-section-right {
+    padding: 0px;
+
+    .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.background-image-section-center
+{
+	@extend .section-light-theme;
+
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.background-image-section .background-image-section-image
+{
+        background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.background-image-section-content
+{
+    padding: 80px 60px;
+}

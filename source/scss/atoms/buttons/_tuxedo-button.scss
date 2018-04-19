@@ -1,0 +1,27 @@
+.tuxedo-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 9px;
+  font-size: 3vw;
+  font-family: "Effra W01", Helvetica, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.7rem 0;
+  border: 2px solid #000;
+  }
+
+  .tuxedo-button:hover, .tuxedo-button:active
+  {
+    background: transparent;
+    border-color: #fff;
+  }
+
+
+  .tuxedo-button:hover {
+    color: #fff;
+  }

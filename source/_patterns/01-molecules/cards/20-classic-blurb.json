@@ -1,0 +1,14 @@
+{
+	"headline" : {
+		"short" : false,
+		"medium" : "Introducing the Classic Blurb"
+
+	},
+
+	"paragraph" : {
+		"short" : "The \"classic-blurb\", is an iteration of the simple blurb, accept the icon is positioned to the left of the content. This is simply a matter of design preferences. However keep in my mind it is probably not wise to mix and match \"classy-blurbs\" and \"simple-blurbs\" as you might disrupt the rythym of your content.",
+		"medium" : "The \"classic-blurb\", is an iteration of the simple blurb, accept the icon is positioned to the left of the content. This is simply a matter of design preferences. However keep in my mind it is probably not wise to mix and match \"classy-blurbs\" and \"simple-blurbs\" as you might disrupt the rythym of your content.",
+		"long" : "The \"classic-blurb\", is an iteration of the simple blurb, accept the icon is positioned to the left of the content. This is simply a matter of design preferences. However keep in my mind it is probably not wise to mix and match \"classy-blurbs\" and \"simple-blurbs\" as you might disrupt the rythym of your content.",
+		"double" : "The \"classic-blurb\", is an iteration of the simple blurb, accept the icon is positioned to the left of the content. This is simply a matter of design preferences. However keep in my mind it is probably not wise to mix and match \"classy-blurbs\" and \"simple-blurbs\" as you might disrupt the rythym of your content."
+	}
+}

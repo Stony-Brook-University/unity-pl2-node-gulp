@@ -1,0 +1,58 @@
+.sidebar {
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+}
+ul.sidebar-navigation {
+  margin-left: 0;
+
+  li {
+    list-style: none;
+  }
+}
+.sidebar-dropdown select {
+  width: 100%;
+  display: block;
+  padding: .5em 1em;
+  border-radius: 0;
+  // Removes default styling for select drop down list
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.sidebar-dropdown select.arrow {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+// Internet Explorer 11 fix for removing default select menu styling
+.sidebar-dropdown select::-ms-expand {
+    display: none;
+}
+
+// Hides the sidebar on mobile
+@media (max-width: 990px) {
+  .sidebar {
+    border-right: 0 !important;
+    padding-right: 0 !important;
+  }
+  .sidebar-navigation {
+    display: none;
+  }
+}
+//Hides the dropdown menu on desktop sizes
+@media (min-width: 991px) {
+  .sidebar-dropdown {
+    display: none;
+  }
+}

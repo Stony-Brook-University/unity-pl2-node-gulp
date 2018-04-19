@@ -1,0 +1,21 @@
+.navbar-toggle--text {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.fixed-nav--text {
+  padding: .8em 0 .8em;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  &:after {
+    position: relative;
+    display: block;
+    width: 0%;
+    height: 3px;
+    content: ' ';
+    margin: 0 auto;
+    margin-top: 3px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}

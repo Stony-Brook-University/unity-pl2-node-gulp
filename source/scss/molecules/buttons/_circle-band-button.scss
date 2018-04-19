@@ -1,0 +1,93 @@
+//A Circle button with a band of text at a 30 degree angle
+// :hover             - Subtle hover highlight.
+// .stars-given       - A highlight indicating you've already given a star.
+// .stars-given:hover - Subtle hover highlight on top of stars-given styling.
+// .disabled          - Dims the button to indicate it cannot be used.
+//Styleguide circle-band-button
+
+@mixin circle-band-button($diameter){
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $diameter* 1px;
+    height: $diameter * 1px;
+    //margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .circle-band-button--label {
+
+        font-size: 1.3em;
+
+
+        margin: (($diameter*0.42) * 1px) 0 0 0;
+
+
+        display: block;
+        opacity: .75;
+        background: #000;
+        height: 36px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: normal;
+        letter-spacing: .01em;
+        text-rendering: optimizeLegibility;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        padding: 5px 0 0 0;
+        -webkit-transition: box-shadow .3s;
+        -moz-transition: box-shadow .3s;
+        transition: box-shadow .3s;
+        box-shadow: 0 0 0 100px rgba(45, 195, 232, 0);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+
+}
+
+
+.circle-band-button--small {
+    @include circle-band-button(150);
+
+}
+
+
+.circle-band-button--large {
+    @include circle-band-button(300);
+}
+
+
+
+
+.circle-band-button {
+    @include circle-band-button(250);
+}
+
+
+
+
+
+
+@include breakpoint($screen-xs) {
+    width: 200px;
+    height: 200px;
+    .circle-band-button--label {
+        font-size: 1.5em;
+        margin: 82px 0 0 0;
+    }
+}
+
+
+.circle-band-button:hover .circle-band-button--label {
+    background-color: rgba(51, 204, 204, 0.6);
+}

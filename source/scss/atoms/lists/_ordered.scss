@@ -1,0 +1,42 @@
+ol.number {
+
+    list-style: none !important;
+    counter-reset: number-counter;
+
+    
+    > li {
+        margin-bottom: 14px;
+        
+    }
+    > li:before {
+        content: counter(number-counter) ".";
+        counter-increment: number-counter;
+        margin: 0 10px 0 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+    }
+}
+
+ol.upper-alpha > li {
+
+    @extend .no-bullets;
+    list-style: upper-alpha !important;
+
+    > li:before {
+        margin: 0 10px 0 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+    }
+}

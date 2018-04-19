@@ -1,0 +1,64 @@
+.hero-event {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    color: #303030;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    &.hero-size-small {
+        min-height: 400px;
+        .hero-content {
+            margin: 100px 0 100px 0;
+            font-weight: 300;
+        }
+    }
+    &.hero-size-medium {
+        min-height: 600px;
+        .hero-content {
+            margin: 150px 0 150px 0;
+            font-weight: 300;
+        }
+    }
+    &.hero-size-large {
+        min-height: 800px;
+        .hero-content {
+            margin: 200px 0 200px 0;
+            font-weight: 300;
+        }
+    }
+}
+
+.hero-events-page {
+    h1 {
+        font-size: 3em;
+    }
+    .event-time {
+        font-size: 2em;
+        text-shadow: 2px 2px 5px #000;
+    }
+    .event-room {
+        font-size: 2em;
+        text-shadow: 2px 2px 5px #000;
+    }
+    .hero-buttons {
+        margin-top: 1.5em;
+    }
+    .hero-content-wrap {
+        .hero-content-text {
+            h1 {
+                font-size: 3em;
+            }
+        }
+    }
+}

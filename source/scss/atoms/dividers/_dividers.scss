@@ -1,0 +1,10 @@
+.divider {
+  background-color: transparent;
+
+  hr.divider-gray {
+    border: 1px dashed #ccc !important;
+    width: 100% !important;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+}

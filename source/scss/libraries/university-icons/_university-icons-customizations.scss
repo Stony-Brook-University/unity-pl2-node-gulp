@@ -1,0 +1,57 @@
+/*used for icomoon font rebranding*/
+
+a[class^="sbuicon-"]:before, a[class*="sbuicon-"]:before, span[class^="sbuicon-"]:before, span[class*="sbuicon-"]:before
+{
+    margin-right: 10px;
+}
+
+//scheduled maintenance
+.icon-system-status-307 {
+    content: "\ea5f";
+}
+
+//disruption
+.icon-system-status-308 {
+    content: "\ed4c";
+}
+
+//outage
+.icon-system-status-309 {
+    content: "\ed62";
+}
+
+//information
+.icon-system-status-310 {
+    content: "\ed61";
+}
+
+.heading-icon:before {
+    margin: 0;
+    font-size: 4em;
+}
+
+.icon-checkmark-circle:before {
+    @extend .sbuicon;
+    content: "\f058";
+}
+
+
+.icon-info2:before {
+	   @extend .sbuicon;
+    content: "\ed61";
+}
+
+.icon-calendar:before {
+	   @extend .sbuicon;
+    content: "\f073";
+}
+
+.icon-cancel-circle:before {
+	   @extend .sbuicon;
+    content: "\ed62";
+}
+
+.icon-warning:before {
+    @extend .sbuicon;
+    content: "\ed4c";
+}

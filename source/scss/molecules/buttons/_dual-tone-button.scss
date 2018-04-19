@@ -1,0 +1,53 @@
+//TODO: Should there be an hover effect?
+
+.dual-tone-button {
+    /*
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    */
+    width: 100%;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 5px;
+    background: #fff;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px #aaa;
+    margin-bottom: 2em;
+}
+
+.dual-tone-button:hover {
+    color: #fff;
+    box-shadow: 3px 3px 5px $red;
+}
+
+.dual-tone-button--content {
+    display: block;
+    padding: 5px 0 0 0;
+    background: #900;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: 0 0 3px #500 inset;
+    text-align: center;
+    font-size: 1.2em;
+    @include breakpoint($screen-md) {
+        padding: 25px 0 25px 0;
+    }
+}
+
+span.dual-tone-button--icon {
+    @extend .sbuicon;
+    text-align: center;
+    display: block;
+    background: #000;
+    margin: 0;
+    padding: 5px 0 8px;
+    border-radius: 0 0 2px 2px;
+    @include breakpoint($screen-md) {
+        margin: 0px 0 0 0;
+        padding: 10px 0 13px;
+    }
+}

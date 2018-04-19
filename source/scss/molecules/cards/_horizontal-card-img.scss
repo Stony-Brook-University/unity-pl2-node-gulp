@@ -1,0 +1,19 @@
+.horizontal-card-img {
+    position: relative;
+    
+    margin: 4em 0 4em 0;
+    text-align: left;
+    display: block;
+    h4 {
+        color: #990000;
+        line-height: 1em;
+    }
+    p {
+        font-size: inherit;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

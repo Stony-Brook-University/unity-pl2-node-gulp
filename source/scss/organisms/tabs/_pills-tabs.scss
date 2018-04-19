@@ -1,0 +1,22 @@
+.pills-tabs {
+  @extend .nav;
+  @extend .nav-pills;
+  @extend .nav-justified;
+
+  margin-left: 0 !important;
+  margin-right: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+
+
+  li a {
+    border: 1px solid $light-gray;
+    margin-right: 1em;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+      transition: .3s ease all;
+    }
+  }
+}

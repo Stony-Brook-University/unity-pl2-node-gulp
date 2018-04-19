@@ -1,0 +1,72 @@
+<section class="hero-classic overlay-black" style="background-image:url('../../placeholders/images/wolfie-1900.jpg');">
+
+{{# shownav }}
+  <div class="hero-classic--navigation">
+        <div class="container">
+            <div class="row">
+
+              {{# navbuttons }}
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <a class="secondary-button button-block" data-match-height="hero-button" href="{{url}}">{{headline.x-small}}</a>
+                </div>
+              {{/ navbuttons }}
+
+
+
+            </div>
+        </div>
+    </div>
+{{/ shownav }}
+
+<div class="hero-classic--content">
+
+	<div class="container">
+
+
+			<div class="row">
+        {{#showimg}}
+				<div class="col-sm-3">
+						<img class="hero--logo" src="{{img.square.src}}">
+				</div>
+
+				<div class="col-sm-9">
+
+					<h1 class="hero-classic--heading">{{headline.short}}</h1>
+
+					<div class="hero-classic--text" class="introduction white">{{{paragraph.double}}}</div>
+
+				</div>
+        {{/showimg}}
+        {{^showimg}}
+        <div class="col-sm-12">
+
+					<h1 class="hero-classic--heading">{{headline.short}}</h1>
+
+					<div class="hero-classic--text" class="introduction white">{{{paragraph.double}}}</div>
+
+				</div>
+        {{/showimg}}
+			</div>
+    </div>
+  </div>
+
+  {{# showbuttons }}
+  <div class="hero-classic--buttons">
+    <div class="container">
+
+			     <div class="row">
+
+             {{# buttons }}
+  		         <div class="col-xs-12 col-md-4">
+                 <a data-match-height="hero-buttons" class="hero-button button-block" href="{{url}}">{{headline.short}}</a>
+    	          </div>
+             {{/ buttons }}
+           </div>
+        </div>
+
+
+    </div>
+    {{/ showbuttons }}
+
+
+</section>

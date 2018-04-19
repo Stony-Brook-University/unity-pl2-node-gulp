@@ -1,0 +1,157 @@
+////////////////////////
+// Extendables Partials
+//
+// All of your extendable classes, ids, and placeholder extendables
+//   should go in this file.
+////////////////////////
+
+/* Heading, subheading, paragraph, and media styles for cards */
+
+.list-style-none
+{
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.button-trans {
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.clearfix {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+
+
+.hide-accessible-mobile {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    //TODO: Why do we set width and height on this?
+    //width: 2000px;
+    //height: 2000px;
+
+    @include breakpoint($screen-md) {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.hide-accessible {
+    position: absolute !important;
+    top: -99999px !important;
+    left: -99999px !important;
+    width: 2000px;
+    height: 2000px;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.col-centered {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+
+.spacer {
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 28px;
+}
+
+
+
+.sbuicon {
+    font-family: 'sbu-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    text-indent: 0;
+    /* Enable Ligatures ================ */
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sbuicon-after {
+    display: inline-block;
+    margin: 0 2px 0 5px;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    text-indent: 0;
+    font-family: 'sbu-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Enable Ligatures ================ */
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-square-bg {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    padding-right: 0px !important; //override pull-left padding
+}
+
+
+@media (max-width: 480px) {
+ .mobile-block {
+   display: block !important;
+ }
+}

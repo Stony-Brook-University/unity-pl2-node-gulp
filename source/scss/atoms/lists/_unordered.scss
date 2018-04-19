@@ -1,0 +1,236 @@
+.no-bullets, ul.no-bullets, ul.no-bullets li {
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+ul.icon-list {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+}
+
+ul.icon-list li {
+    text-indent: -2em;
+    list-style: none;
+    margin-left: 1.5em;
+    margin-top: 0;
+}
+
+ul.star-bullets {
+    @extend .no-bullets;
+
+    li:before {
+        content: "\2605";
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+    }
+}
+
+ul, ul.bullets {
+    list-style: disc;
+    list-style-type: disc outside;
+
+    li {
+        @extend .no-bullets;
+
+        list-style: disc;
+        list-style-type: disc outside;
+    }
+}
+
+ul.default-bullets, {
+    list-style: none;
+    list-style-type: none;
+    li {
+        margin-left: 20px;
+        text-indent: -15px;
+        list-style: none;
+        list-style-type: none;
+    }
+    li:before {
+        display: inline-block;
+        content: "\2022";
+        margin: 0 0 0 0;
+        font-style: normal;
+        font-weight: normal;
+        font-family: arial;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        z-index: 1;
+        font-size: 1.2em;
+        width: 10px;
+        text-align: center;
+        color: #900;
+    }
+}
+
+.arrow-bullets {
+    @extend .no-bullets;
+
+    li:before {
+
+        content: "\f061";
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+
+        @extend .sbuicon;
+    }
+}
+
+.check-bullets {
+    @extend .no-bullets;
+    li:before {
+
+        content: "\f00c";
+        margin: 0 10px 0 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+
+        @extend .sbuicon;
+    }
+}
+
+/* Using ICONS as bullets
+The list-icon-group class styles the <li></li> elements as a whole.
+The list-icon class styles the individual icons to ensure equidistant spacing.
+
+<ul class="list-icon-group">
+    <li><span class="sbuicon-apple list-icon">Apple</li>
+</ul>
+
+ */
+
+.list-icon {
+
+    display: inline-block;
+    width: 20px;
+    @extend .no-bullets;
+}
+.no-bullets, ul.no-bullets, ul.no-bullets li {
+    margin-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+//TODO: Why are star bullets indented differently than normal bullets?
+ul.star-bullets {
+    @extend .no-bullets;
+
+    li:before {
+        content: "\2605";
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+    }
+}
+
+ul, ul.bullets {
+    list-style: disc;
+    list-style-type: disc outside;
+
+    li {
+        @extend .no-bullets;
+
+        list-style: disc;
+        list-style-type: disc outside;
+    }
+}
+
+ul.default-bullets, {
+    list-style: none;
+    list-style-type: none;
+    li {
+        margin-left: 20px;
+        text-indent: -15px;
+        list-style: none;
+        list-style-type: none;
+    }
+    li:before {
+        display: inline-block;
+        content: "\2022";
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        font-family: arial;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        z-index: 1;
+        font-size: 1.2em;
+        width: 10px;
+        text-align: center;
+        color: #900;
+    }
+}
+
+.arrow-bullets {
+    @extend .no-bullets;
+
+    li:before {
+
+        content: "\f061";
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+
+        @extend .sbuicon;
+    }
+}
+
+.check-bullets {
+    @extend .no-bullets;
+    li:before {
+
+        content: "\f00c";
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+
+        @extend .sbuicon;
+    }
+}

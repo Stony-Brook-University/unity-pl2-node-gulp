@@ -1,0 +1,75 @@
+.panel-layout-responsive-2col
+{
+  #content
+  {
+    margin: 5px;
+  }
+
+  
+}
+
+
+.panel-layout-responsive-2col
+{
+
+    #main-content-section
+    {
+
+      width: 100%;
+      float: left;
+      
+    
+      @include breakpoint($screen-md) 
+      {
+    
+        width: 70%;   
+      }
+
+      padding: 0px 10px 0px 0px;
+
+    }
+
+    #right-prefix
+    {
+
+      width: 100%;
+      float: left;
+
+      @include breakpoint($screen-md) 
+      {
+    
+        width: 25%;   
+        float: right;
+      }
+
+      .panel-pane
+      {
+        float: left;
+        clear: both;
+        width: 100%;
+      }
+    }
+
+    #right-postfix
+    {
+
+      width: 100%;
+      float: left;
+
+      @include breakpoint($screen-md) 
+      {
+    
+        width: 25%;   
+        float: right;
+        clear: right;
+      }
+
+      .panel-pane
+      {
+        float: left;
+        clear: both;
+        width: 100%;
+      }
+    }
+
+}

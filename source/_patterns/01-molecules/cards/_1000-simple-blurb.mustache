@@ -1,0 +1,40 @@
+<div class="simple-blurb-card" data-match-height="simple-blurb-card">
+
+
+
+
+
+    {{# showicon }}
+    <span class="simple-blurb-card--icon {{icon}}"></span><br />
+    {{/ showicon }}
+
+    {{# showiframe }}
+    <div class="simple-blurb-card--video-container">
+        <iframe class="simple-blurb-card--video" src="{{iframe.src}}" allowfullscreen /></iframe>
+    </div>
+    {{/ showiframe }}
+
+    {{# showimg }}
+    <img class="simple-blurb-card--image" src="{{img.landscape-16x9.src}}" />
+    {{/ showimg }}
+
+
+
+    <h2 class="simple-blurb-card--heading">{{ headline.medium }}</h2>
+
+	{{# headline.short }}
+    <h3 class="simple-blurb-card--subheading">{{ headline.short }}</h3>
+    {{/ headline.short }}
+
+    <div class="simple-blurb-card--text">
+        {{{paragraph.medium}}}
+    </div>
+
+
+    {{# cta }}
+    <div class="simple-blurb-card--cta">
+        <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+    </div>
+    {{/ cta }}
+
+</div>

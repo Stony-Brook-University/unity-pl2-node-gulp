@@ -1,0 +1,20 @@
+<div class="list-card" data-match-height="star-list-card">
+    {{# icon }}
+    <span class="list-card--icon {{icon}}"></span>
+    {{/ icon }}
+
+    {{^ icon }}
+    {{# img}}
+    <img class="list-card--image" src="{{img.landscape-16x9.src}}" />
+    {{/ img }}
+    {{/icon}}
+
+    <h3 class="list-card--heading"><em class="fancy">For</em> Employers</h3>
+    <div class="list-card--content">
+    <ul class="star-bullets">
+        <li><a href="{{url}}">{{headline.short}}</a></li>
+        <li><a href="{{url}}">{{headline.medium}}</a></li>
+        <li><a href="{{url}}">{{headline.short}}</a></li>
+    </ul>
+    </div>
+</div>

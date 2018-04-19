@@ -1,0 +1,416 @@
+.no-border {
+  border: 0 !important;
+}
+
+.red-border {
+    border-color: $red !important;
+}
+
+.dark-red-border {
+    border-color: $dark-red !important;
+}
+
+.black-border {
+    border-color: $black !important;
+}
+
+.dark-gray-border {
+    border-color: $dark-gray !important;
+}
+
+.light-gray-border {
+    border-color: $light-gray !important;
+}
+
+.gray-border {
+    border-color: $gray !important;
+}
+
+.white-border {
+    border-color: $white !important;
+}
+
+
+.sbu-border-bottom {
+    border-bottom: 1px solid #EEE;
+    -webkit-box-shadow: 0px 2px 6px -5px #333;
+    -moz-box-shadow: 0px 2px 6px -5px #333;
+    box-shadow: 0px 2px 6px -5px #333;
+}
+
+.border-thin-dark {
+    padding: 0;
+}
+
+.double-border {
+    border: 4px double #333333;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #999999;
+}
+
+.top-and-bottom-border {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+}
+
+
+.rounded-corners-10px, .rounded-corners10 {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.rounded-corners-5px, .rounded-corners5 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.shadow {
+  box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.75);
+}
+
+.shadow-blue {
+    box-shadow: 0 5px 0 #08578C;
+}
+
+.shadow-blue:hover {
+    top: 2px;
+    box-shadow: 0 3px 0 #08578C;
+    position: relative;
+}
+
+.shadow-blue:active {
+    top: 5px;
+    box-shadow: 0 0 0 #08578C;
+}
+
+//TODO Why these colors/combo's?
+.shadow-orange {
+    box-shadow: 0 5px 0 #e67e22;
+}
+
+.shadow-orange:hover {
+    top: 2px;
+    box-shadow: 0 3px 0 #e67e22;
+    position: relative;
+}
+
+.shadow-orange:active {
+    top: 5px;
+    box-shadow: 0 0 0 #e67e22;
+}
+
+.border-bottom-aaa {
+    border-bottom: 3px solid #AAAAAA;
+}
+
+.reflectBelow {
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(white));
+}
+
+.border-shadow {
+    border-bottom: 1px solid #444444;
+    border-top: 1px solid #444444;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 8px 7px -8px #111111, 0 -8px 7px -8px #111111, 0 0 60px #222222 inset;
+    -moz-box-shadow: 0 8px 7px -8px #111111, 0 -8px 7px -8px #111111, 0 0 60px #222222 inset;
+    box-shadow: 0 8px 7px -8px #111111, 0 -8px 7px -8px #111111, 0 0 60px #222222 inset;
+}
+
+.bottom-shadow {
+    -webkit-box-shadow: 0 10px 8px -8px #000000;
+    -moz-box-shadow: 0 10px 8px -8px #000000;
+    box-shadow: 0 10px 8px -8px #000000;
+}
+
+.top-shadow {
+    -webkit-box-shadow: 0 -10px 8px -8px #000000;
+    -moz-box-shadow: 0 -10px 8px -8px #000000;
+    box-shadow: 0 -10px 8px -8px #000000;
+}
+
+.top-and-bottom-shadow {
+    -webkit-box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
+    -moz-box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
+    box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
+}
+
+///BORDER STYLES
+.border-dotted {
+    border-style: dotted;
+}
+.border-dashed {
+    border-style: dashed;
+}
+.border-solid {
+    border-style: solid;
+}
+.border-double {
+    border-style: double;
+}
+.border-groove {
+    border-style: groove;
+}
+.border-ridge {
+    border-style: ridge;
+}
+.border-inset {
+    border-style: inset;
+}
+.border-outset {
+    border-style: outset;
+}
+
+///BORDER WIDTHS
+.border-width-1 {
+    border-width: 1px;
+}
+.border-width-2 {
+    border-width: 2px;
+}
+.border-width-3 {
+    border-width: 3px;
+}
+.border-width-4 {
+    border-width: 4px;
+}
+.border-width-5 {
+    border-width: 5px;
+}
+
+///BOX SHADOW EFFECTS
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.effect3
+{
+  position: relative;
+}
+.effect3:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.effect4
+{
+  position: relative;
+}
+.effect4:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.effect7
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect7:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+.section-border {
+
+  width: 100%;
+  border-bottom: .1em solid $gray;
+}

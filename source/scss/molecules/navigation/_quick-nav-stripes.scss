@@ -1,0 +1,173 @@
+.quick-nav-stripes {
+    background-color: #000;
+
+    @include breakpoint($screen-md) {
+        background-image: url("../images/backgrounds/rays/gray/skinny.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+.quick-nav-stripes--search-container {
+  display: inline-block;
+  width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+}
+.quick-nav-stripes--search-input {
+  font-size: 10px;
+  height: 18px;
+  box-shadow: none;
+  border: 0px;
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  padding-left: 10px;
+  color: #000;
+  display: inline-block;
+  max-width: 120px;
+
+    ::-webkit-input-placeholder {
+        color: red !important;
+    }
+
+
+}
+
+.quick-nav-stripes--search-button {
+    display: inline-block;
+    background: none;
+    border: 0;
+}
+
+
+.quick-nav-stripes--search-input::-webkit-input-placeholder {
+color: #000;
+}
+
+.quick-nav-stripes--search-input:-moz-placeholder { /* Firefox 18- */
+color: #000;
+}
+
+.quick-nav-stripes--search-input::-moz-placeholder {  /* Firefox 19+ */
+color: #000;
+}
+
+.quick-nav-stripes--search-input:-ms-input-placeholder {
+color: #000;
+}
+
+
+
+
+.quick-nav-stripes--container {
+  text-transform: none;
+  font-size: .875em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint($screen-md) {
+
+      padding: .5em;
+      color: $dark-gray;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: .78em;
+  }
+}
+
+.quick-nav-stripes--link, a.quick-nav-stripes--link, a.quick-nav-stripes--link:visited {
+padding: 10px 5px;
+ color: #fff;
+display: block;
+
+
+
+    @include breakpoint($screen-md) {
+         color: $dark-gray;
+         display: inline;
+         padding: 0;
+         &:hover,
+         &:focus {
+           color: $red;
+         }
+         &:visited {
+           //color: #000;
+         }
+    }
+
+}
+
+
+.quick-nav-stripes--list {
+  margin-bottom: 0 !important;
+
+  @include breakpoint($screen-md) {
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+  }
+}
+// Removes default left-margin on ul tag
+ul.quick-nav-stripes--list {
+  margin-left: 0 !important;
+}
+
+.quick-nav-stripes--list li:last-of-type {
+  @include breakpoint($screen-md) {
+      border-right: 0 !important;
+  }
+}
+
+.quick-nav-stripes--list li:nth-child(even) {
+    border-right: 0;
+
+    @include breakpoint($screen-md) {
+        border-right: 1px solid #4b4b4b;
+    }
+}
+.quick-nav-stripes--list-item {
+
+    width: 50%;
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid #4b4b4b;
+    text-align: center;
+    margin: 0 -1px 0 -1px;
+
+    box-sizing: border-box;
+
+
+    @include breakpoint($screen-md) {
+
+        display: inline;
+        list-style: none;
+        margin-right: .5em;
+        padding: 0 1em;
+
+
+
+    }
+
+    &:hover, &focus {
+
+        background-color: $red;
+
+        .quick-nav-stripes--link {
+                color: $white;
+        }
+
+        @include breakpoint($screen-md) {
+            background-color: transparent;
+
+            .quick-nav-stripes--link {
+                color: $red;
+            }
+        }
+    }
+
+}

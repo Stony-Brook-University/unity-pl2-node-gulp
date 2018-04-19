@@ -1,0 +1,18 @@
+<div class="stat-card">
+{{# showicon }}
+<span class="stat-card--icon {{icon}}"></span><br />
+{{/ showicon }}
+
+{{# showimg }}
+<img class="simple-blurb-card--image" src="{{img.landscape-16x9.src}}" />
+{{/ showimg }}
+
+<h3 class="stat-card--heading">{{stat.presymbol}}<span class="count-to" data-countto="{{stat.number}}">{{stat.number}}</span>{{stat.postsymbol}}</h3>
+<strong class="stat-card--subheading">{{headline.short}}</strong>
+
+{{^hidetext}}
+<div class="stat-card--text">
+    {{{paragraph.medium}}}
+</div>
+{{/hidetext}}
+</div>

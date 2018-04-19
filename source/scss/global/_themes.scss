@@ -1,0 +1,47 @@
+.blurb-light-theme {
+    .blurb-card {
+        color: #FFF;
+        a {
+            color: $light-gray;
+        }
+        a:hover {
+            color: $gray;
+        }
+    }
+}
+
+.light-theme .section-themeable, .light-theme .themeable
+{
+    color: #fff;
+
+    h1,h2,h3,h4,h5,h6
+    {
+        color: #fff;
+    }
+
+    a
+    {
+        color: #fff;
+        //border-bottom: 1px dashed #fff;
+    }
+
+    a:hover, a:focus
+    {
+        color: #ccc;
+        //border-bottom: 1px solid #fff;
+    }
+}
+
+.dark-theme .section-themeable {
+    h1, h2, h3, h4, h5, h6, p, a, div, span {
+        color: #333;
+    }
+}
+
+.section-background-image
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}

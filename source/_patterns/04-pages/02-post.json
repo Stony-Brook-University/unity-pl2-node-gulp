@@ -1,0 +1,19 @@
+{
+	"title" : "Top 10 Trails You Have To Hike Before You Die",
+	"bodyClass": "article",
+	"author" : {
+		"first-name" : "Julianne",
+		"last-name" : "McCormick"
+	},
+	
+	"inset-blocks" : [
+		{
+			"headline" : "This is the headline for the inset block"
+		}
+	],
+	"latest-block" : [
+		{
+			"headline" : "This is the headline for the latest block"
+		}
+	]
+}

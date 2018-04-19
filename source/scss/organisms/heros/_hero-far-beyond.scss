@@ -1,0 +1,113 @@
+
+
+.hero-far-beyond {
+  position: relative;
+  background-size: cover;
+  //min-height: 350px;
+  overflow: hidden;
+  padding: 2.5em 0;
+
+  img {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    float: left;
+    height: 430px;
+    width: auto;
+    max-width: 1000px;
+    margin: 0 0 0 -60px;
+  }
+}
+
+@media (min-width: 1760px) {
+.hero-far-beyond {
+//    height: 760px;
+  }
+}
+@media (min-width: 1540px) {
+.hero-far-beyond {
+//    height: 700px;
+  }
+}
+
+@media (min-width: 1160px) {
+  .hero-far-beyond {
+    overflow: hidden;
+//    height: 680px;
+  }
+}
+.hero-far-beyond--content {
+  z-index: 2;
+  position: relative;
+}
+.hero-far-beyond--heading {
+  color: #fff;
+  font-size: 6.25em;
+  line-height: 0.78em;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(0,0,0,.4);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+.hero-far-beyond--text {
+  font-family: $font-alt;
+  font-weight: 400;
+  font-size: 1.66em;
+  color: white;
+  line-height: 1em;
+  margin-bottom: 2rem;
+}
+a.hero-far-beyond--button {
+  font-family: "Effra W01", Helvetica, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #800000;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.6rem 2rem;
+  border: 2px solid #800000;
+  display: inline-block;
+  margin: 0 16px 16px 0;
+
+  &:hover,
+  &:focus {
+  background: transparent;
+  border-color: #fff;
+  }
+}
+@media (max-width: 801px) {
+  .hero-far-beyond--heading {
+    font-size: 5em;
+  }
+  .hero-far-beyond--text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 641px) {
+  .hero-far-beyond--heading {
+    font-size: 3.75em;
+  }
+  .hero-far-beyond--text {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 480px) {
+  .hero-far-beyond--heading {
+    font-size: 2.75em;
+    margin-bottom: 1rem;
+  }
+  .hero-far-beyond--text {
+    font-size: 1em;
+    margin-bottom: 1rem;
+    line-height: 1em;
+  }
+}
+.hero-far-beyond--icon {
+  display: inline-block;
+  margin: 0 0 0 4px;
+}

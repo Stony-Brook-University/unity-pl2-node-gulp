@@ -1,0 +1,43 @@
+.stat-card {
+    padding: 2em;
+}
+
+.stat-card--icon {
+    @extend .card--icon;
+}
+
+.stat-card--image {
+	@extend .card--image;
+	padding: 10px;
+	border: 1px solid #eee;
+	margin-bottom: 15px;
+}
+
+.stat-card--heading {
+    @extend .card--heading;
+}
+
+.stat-card--subheading {
+    @extend .card--subheading;
+    margin-top: -.3em;
+}
+
+.stat-card--text {
+    @extend .card--text;
+}
+
+
+
+.stat-card--video-container {
+	@extend .embed-responsive;
+	@extend .embed-responsive-16by9;
+
+	border: 1px solid #eee;
+}
+
+.simple-blurb-card--video {
+	@extend .embed-responsive-item;
+
+	padding: 10px;
+	margin-bottom: 15px;
+}

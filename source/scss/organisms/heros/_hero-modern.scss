@@ -1,0 +1,31 @@
+/* ==========================================================================
+Hero
+========================================================================== */
+
+.hero-modern {
+  @include hero();
+}
+
+.hero-modern--heading {
+  @include hero--heading();
+
+  text-align: center;
+}
+
+.hero-modern--navigation {
+  @include hero--navigation();
+}
+
+.hero-modern--buttons {
+  @include hero--buttons();
+}
+
+.hero-modern--content {
+  @include hero--content();
+
+  text-align: center;
+}
+
+.hero-modern--text {
+  @include hero--text();
+}

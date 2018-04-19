@@ -1,0 +1,57 @@
+<section class="hero-split cozy overlay-black bg-pattern-pentagon">
+  {{# shownav }}
+    <div class="hero-split--navigation">
+          <div class="container">
+              <div class="row">
+
+                {{# navbuttons }}
+                  <div class="col-sm-6 col-md-4 col-lg-4">
+                      <a class="secondary-button button-block" data-match-height="hero-button" href="{{url}}">{{headline.x-small}}</a>
+                  </div>
+                {{/ navbuttons }}
+
+
+
+              </div>
+          </div>
+      </div>
+  {{/ shownav }}
+
+
+  <div class="hero-split--content">
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-12 col-md-6">
+      <h1 class="hero-split--heading">{{headline.short}}</h1>
+
+      <div class="hero-split--text">{{{paragraph.double}}}</div>
+      {{# showbuttons }}
+      <div class="row">
+        {{# buttons }}
+          <div class="col-xs-12 col-md-12">
+              <a data-match-height="hero-buttons" class="hero-button button-block" href="{{url}}">{{headline.x-small}}</a>
+            </div>
+      {{/ buttons }}
+
+    </div>
+    {{/ showbuttons }}
+
+
+  </div>
+  <div class="col-md-6">
+    {{#showvideo}}
+    <div class="hero-split--video video-wrapper">
+        <iframe src="https://www.youtube.com/embed/DpWDOXN5DWU?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    {{/showvideo}}
+    {{^ showvideo }}
+    <div class="hero-split--image">
+      <img class="img-responsive fadeIn" src="{{img.square.src}}" alt="tech 2">
+    </div>
+    {{/ showvideo}}
+  </div>
+
+  </div>
+  </div>
+</div>
+</section>

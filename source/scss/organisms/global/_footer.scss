@@ -1,0 +1,67 @@
+
+ .site-footer
+ {
+     strong{
+         font-weight: 700;
+         font-size: 1.15em;
+     }
+
+    .address, .address a, .codes {
+        line-height: 1.7em;
+    }
+    .codes {
+        display: block;
+        line-height: 1.7em;
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        padding: 10px 0;
+        background: #191919;
+    }
+    .address .serif-italic,
+    .codes .serif-italic {
+        font-size: 1.3em;
+        line-height: 1.4em;
+        margin: 0 0 4px;
+        display: block;
+    }
+
+
+    .address-link .icon {
+        display: inline-block;
+        margin: 0 6px 0 0;
+        font-size: 1.2em;
+    }
+    .small-button,
+    .phone a,
+    .footer-bar span a {
+        font-size: .8em;
+        display: inline-block;
+        padding: 1px 8px 3px;
+        border: 1px solid #383838;
+        margin: 8px auto;
+        background: #222;
+        border-radius: 3px;
+    }
+    .phone {
+        display: block;
+    }
+    .phone a {
+        color: #ddd;
+        width: 100px;
+        padding-top: 0px 8px 1px;
+    }
+    .social h5 {
+        font-size: 1.4em;
+        font-family: 'ITCFranklinGothicW01-Md 812695';
+        text-transform: uppercase;
+        margin: 0 0 15px;
+        color: #ccc;
+    }
+
+    .footer-links {
+        @include breakpoint($screen-md) {
+            text-align: left;
+        }
+    }
+}

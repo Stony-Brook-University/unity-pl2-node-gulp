@@ -1,0 +1,88 @@
+.event-media-highlight-card {
+
+	height: 100%;
+
+	.event-media-hightlight-item {
+
+		font-size: 1.1em;
+	}
+	.event-media-highlight-img,
+	.event-media-highlight-iframe,
+	.event-media-highlight-video {
+	
+		max-width: 100%;
+		border: 1px solid $light-gray;
+		padding: 1em;
+		margin-bottom: 1.5em;
+	}
+
+	.event-media-highlight-title {
+		color: $red;
+		font-size: 2.3em;
+	}
+
+}
+
+.event-date-desc-card {
+
+	position: relative;
+	padding: 0 0 1em 14em;
+	border-bottom: .1em solid $gray;
+	margin-bottom: 2em;
+
+	.event-date-desc-time {
+
+		text-align: center;
+		color: $red;
+		border: .1em solid $red;
+		padding: 1em;
+		font-size: 1.1em;
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    display: block;
+	    min-width: 22%;
+	    max-width: 22%;
+
+	    ul li {
+
+    			font-size: .8em;
+	    }
+	}
+
+	.event-date-desc-time-title {
+		font-size: 1.3em;
+		color: $red;
+	}
+
+	.event-date-desc-item {
+
+		font-size: 1.1em;
+	}
+
+	.event-date-desc-share {
+
+		max-width: 100%;
+		padding: 2em 0 1em;
+
+		a {
+
+			color: $dark-gray;
+
+			&:hover,
+			&:focus, {
+
+				color: $red;
+			}
+		}
+	
+		.event-date-desc-share-icon {
+			
+			text-align: center;
+			padding: .5em 0 .5em .5em;
+			font-size: 1em;
+			border: .1em solid $light-gray;
+			margin-right: .5em;
+		}
+	}
+}

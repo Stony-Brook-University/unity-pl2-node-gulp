@@ -1,0 +1,529 @@
+
+.no-left-padding {
+
+  padding-left: 0;
+}
+/* --------------------------------
+
+Slider Hero
+
+-------------------------------- */
+.sbu-hero {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.sbu-hero-slider{
+    margin: 0;
+    padding: 0;
+}
+
+.sbu-hero-slider li{
+    margin: 0;
+    padding: 0;
+}
+
+h2.sbu-hero-title {
+
+  margin: 0;
+}
+
+
+.sbu-hero-slider {
+  position: relative;
+  height: 75vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+          list-style-image: none;
+          list-style-type: none;
+          padding:0;
+          li{
+
+                    list-style-image: none;
+                    list-style-type: none;
+          }
+
+}
+
+.sbu-hero-content {
+  font-size: 1.7rem;
+  line-height: 1.9;
+
+}
+
+.sbu-hero-content a {
+
+  color: #fff;
+  text-decoration: underline;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
+}
+
+.sbu-hero-slider-img {
+
+  @extend .img-responsive;
+  right: 0px;
+
+}
+
+.sbu-hero-slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+
+
+.sbu-hero-slider li.selected {
+  /* this is the visible slide */
+  position: relative;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.sbu-hero-slider li.move-left {
+  /* slide hidden on the left */
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.sbu-hero-slider li.is-moving, .sbu-hero-slider li.selected {
+  /* the is-moving class is assigned to the slide which is moving outside the viewport */
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+@media only screen and (max-width: 960px) {
+
+.sbu-hero-content {
+  display: none;
+}
+.sbu-hero-slider-img {
+  margin-bottom: 20px;
+}
+
+}
+
+/* --------------------------------
+
+Single slide style
+
+-------------------------------- */
+.sbu-hero-slider li {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sbu-hero-slider .sbu-full-width,
+.sbu-hero-slider .sbu-half-width {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  /* this padding is used to align the text */
+  text-align: left;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+  justify-content: center;
+}
+.sbu-hero-slider .sbu-img-container {
+  /* hide image on mobile device */
+  display: none;
+}
+.sbu-hero-slider .sbu-img-container img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.sbu-hero-slider .sbu-bg-video-wrapper {
+  /* hide video on mobile device */
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.sbu-hero-slider .sbu-bg-video-wrapper video {
+  /* you won't see this element in the html, but it will be injected using js */
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
+  height: auto;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.sbu-hero-slider h2, .sbu-hero-slider p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  color: #ffffff;
+}
+.sbu-hero-slider h2 {
+  font-size: 2.4rem;
+}
+.sbu-hero-slider .sbu-btn {
+  display: inline-block;
+  padding: 1.2em 1.4em;
+  margin-top: .8em;
+  background-color: rgba(151, 0, 0, 1);
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.sbu-hero-slider .sbu-btn.secondary {
+  background-color: rgba(22, 26, 30, 0.8);
+}
+.sbu-hero-slider .sbu-btn:nth-of-type(2) {
+  margin-left: 1em;
+}
+.no-touch .sbu-hero-slider .sbu-btn:hover {
+  background-color: rgba(188  ,0,0,1);
+}
+.no-touch .sbu-hero-slider .sbu-btn.secondary:hover {
+  background-color: #161a1e;
+}
+@media only screen and (min-width: 768px) {
+
+  .sbu-hero-slider .sbu-full-width,
+  .sbu-hero-slider .sbu-half-width {
+    padding-top: 0px;
+  }
+  .sbu-hero-slider .sbu-bg-video-wrapper {
+    display: block;
+  }
+  .sbu-hero-slider .sbu-half-width {
+    width: 45%;
+  }
+  .sbu-hero-slider .sbu-half-width:first-of-type {
+    left: 5%;
+  }
+  .sbu-hero-slider .sbu-half-width:nth-of-type(2) {
+    right: 5%;
+    left: auto;
+  }
+  .sbu-hero-slider .sbu-img-container {
+    display: block;
+  }
+
+  .sbu-hero-slider h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+  }
+  .sbu-hero-slider .sbu-btn {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .sbu-hero-slider .sbu-full-width,
+  .sbu-hero-slider .sbu-half-width {
+    padding-top: 0px;
+  }
+  .sbu-hero-slider h2, .sbu-hero-slider p {
+    margin-bottom: 20px;
+  }
+  .sbu-hero-slider h2 {
+    font-size: 3.2em;
+  }
+}
+
+/* --------------------------------
+
+Single slide animation
+
+-------------------------------- */
+@media only screen and (min-width: 768px) {
+  .sbu-hero-slider .sbu-half-width {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  .sbu-hero-slider .move-left .sbu-half-width {
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+  .sbu-hero-slider .selected .sbu-half-width {
+    /* this is the visible slide */
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .sbu-hero-slider .is-moving .sbu-half-width {
+    /* this is the slide moving outside the viewport
+    wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+  }
+  .sbu-hero-slider li.selected.from-left .sbu-half-width:nth-of-type(2),
+  .sbu-hero-slider li.selected.from-right .sbu-half-width:first-of-type {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+  }
+  .sbu-hero-slider li.selected.from-left .sbu-half-width:first-of-type,
+  .sbu-hero-slider li.selected.from-right .sbu-half-width:nth-of-type(2) {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s;
+    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
+  }
+  .sbu-hero-slider .sbu-full-width h2,
+  .sbu-hero-slider .sbu-full-width p,
+  .sbu-hero-slider .sbu-full-width .sbu-btn {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  .sbu-hero-slider .move-left .sbu-full-width h2,
+  .sbu-hero-slider .move-left .sbu-full-width p,
+  .sbu-hero-slider .move-left .sbu-full-width .sbu-btn {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  .sbu-hero-slider .selected .sbu-full-width h2,
+  .sbu-hero-slider .selected .sbu-full-width p,
+  .sbu-hero-slider .selected .sbu-full-width .sbu-btn {
+    /* this is the visible slide */
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .sbu-hero-slider li.is-moving .sbu-full-width h2,
+  .sbu-hero-slider li.is-moving .sbu-full-width p,
+  .sbu-hero-slider li.is-moving .sbu-full-width .sbu-btn {
+    /* this is the slide moving outside the viewport
+    wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+  }
+  .sbu-hero-slider li.selected h2 {
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+  }
+  .sbu-hero-slider li.selected p {
+    -webkit-transition: opacity 0.4s 0.3s, -webkit-transform 0.5s 0.3s;
+    -moz-transition: opacity 0.4s 0.3s, -moz-transform 0.5s 0.3s;
+    transition: opacity 0.4s 0.3s, transform 0.5s 0.3s;
+  }
+  .sbu-hero-slider li.selected .sbu-btn {
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s, background-color 0.2s 0s;
+    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s, background-color 0.2s 0s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
+  }
+}
+/* --------------------------------
+
+Slider navigation
+
+-------------------------------- */
+.sbu-slider-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  background-color: transparent;
+}
+.sbu-slider-nav nav, .sbu-slider-nav ul, .sbu-slider-nav li, .sbu-slider-nav a {
+  height: 100%;
+}
+.sbu-slider-nav nav {
+  display: inline-block;
+  position: relative;
+}
+.sbu-slider-nav .sbu-marker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  color: transparent;
+  background-color: transparent;
+  box-shadow: inset 0 2px 0 currentColor;
+  -webkit-transition: -webkit-transform 0.2s, box-shadow 0.2s;
+  -moz-transition: -moz-transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.sbu-slider-nav .sbu-marker.item-2 {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.sbu-slider-nav .sbu-marker.item-3 {
+  -webkit-transform: translateX(200%);
+  -moz-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -o-transform: translateX(200%);
+  transform: translateX(200%);
+}
+.sbu-slider-nav .sbu-marker.item-4 {
+  -webkit-transform: translateX(300%);
+  -moz-transform: translateX(300%);
+  -ms-transform: translateX(300%);
+  -o-transform: translateX(300%);
+  transform: translateX(300%);
+}
+.sbu-slider-nav .sbu-marker.item-5 {
+  -webkit-transform: translateX(400%);
+  -moz-transform: translateX(400%);
+  -ms-transform: translateX(400%);
+  -o-transform: translateX(400%);
+  transform: translateX(400%);
+}
+.sbu-slider-nav ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.sbu-slider-nav li {
+  display: inline-block;
+  width: 60px;
+  float: left;
+}
+.sbu-slider-nav li.selected a {
+  color: rgba(255,255,255,1);
+}
+.no-touch .sbu-slider-nav li.selected a:hover {
+  background-color: transparent;
+}
+.sbu-slider-nav a {
+  display: block;
+  position: relative;
+  padding-top: 35px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.sbu-slider-nav a::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  //background: url(../assets/sbu-icon-navigation.svg) no-repeat 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .sbu-slider-nav {
+    height: 120px;
+  }
+  .sbu-slider-nav .sbu-marker,
+  .sbu-slider-nav li {
+    width: 95px;
+  }
+  .sbu-slider-nav a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  .sbu-slider-nav a::before {
+    top: 18px;
+  }
+}
+
+
+/* --------------------------------
+
+Javascript disabled
+
+-------------------------------- */
+.no-js .sbu-hero-slider li {
+  display: none;
+}
+.no-js .sbu-hero-slider li.selected {
+  display: block;
+}
+
+.no-js .sbu-slider-nav {
+  display: none;
+}

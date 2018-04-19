@@ -1,0 +1,97 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+	{{> molecules-primary-nav}}
+
+<section id="top" class="hero-beyond cozy gradient-overlay__TopRight">
+    <div class="container">
+      <div class="hero-beyond--headings">
+        <h2 class="white">Published Policies</h2>
+      </div>
+</section>
+
+<section class="cozy">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-3">
+        <div class="sidebar">
+          <h2 class="heading">Policies</h2>
+          <ul class="sidebar-navigation">
+            <li class=" "><a href="/policies/p109" title="">(P109) Appropriate Use of Information Technology</a></li>
+            <li class=" "><a href="/policies/use-of-cable-television" title="">Policy on Use of Cable Television</a></li>
+            <li class=" "><a href="/policies/d100" title="">(D100) Access to Institutional Data</a></li>
+            <li class=" "><a href="/policies/d101" title="">(D101) Classification and Use of Information Assets</a></li>
+            <li class=" "><a href="/policies/d102" title="">(D102) Network Security</a></li>
+            <li class=" "><a href="/policies/d103" title="">(D103) Server Security</a></li>
+            <li class=" "><a href="/policies/d104" title="">(D104) Workstation Security</a></li>
+            <li class=" "><a href="/policies/d105" title="">(D105) Credential Security</a></li>
+            <li class=" "><a href="/policies/d106" title="">(D106) Email</a></li>
+            <li class=" "><a href="/policies/d107" title="">(D107) Information Security Governance</a></li>
+            <li class=" "><a href="/policies/d108" title="">(D108) Information Security Program Roles and Responsibilities</a></li>
+            <li class=" "><a href="/policies/d109" title="">(D109) Personnel Security Policy</a></li>
+            <li class=" "><a href="/policies/d110" title="">(D110) Operational Management Policy</a></li>
+            <li class=" "><a href="/policies/d111" title="">(D111) Stony Brook University Google Apps for Education Acceptable Use and Data Security Policy</a></li>
+            <li class=" "><a href="/policies/d112" title="">(D112) Electronic Mail (Email) Retention Policy</a></li>
+            <li class=" "><a href="/policies/d120" title="">(D120) Web Resources</a></li>
+            <li class=" "><a href="/policies/d121" title="">(D121) Internet Videoconferencing and Virtual Meeting Rooms</a></li>
+            <li class=" "><a href="/policies/d123" title="">(D123) Domain Name Policy</a></li>
+            <li class=" "><a href="/policies/HEOA_compliance_plan" title="">Plan to Combat Unlawful Distribution of Copyrighted Material</a></li>
+            <li class=" "><a href="/policies/faculty-staff-personal-computer-policy" title="">Faculty/Staff Personal Computer Policy</a></li>
+            <li class=" "><a href="/policies/acknowledgement-and-compliance-statement" title="">Acknowledgement and Compliance Statement</a></li>
+          </ul>
+          <div class="sidebar-dropdown">
+            <select class="arrow">
+              <optgroup label="Published Policies List">
+                <option value="">(P109) Appropriate Use of Information Technology</option>
+                <option value="/policies/use-of-cable-television" title="">Policy on Use of Cable Television</option>
+                <option value="/policies/d100" title="">(D100) Access to Institutional Data</option>
+                <option value="/policies/d101" title="">(D101) Classification and Use of Information Assets</option>
+                <option value="/policies/d102" title="">(D102) Network Security</option>
+                <option value="/policies/d103" title="">(D103) Server Security</option>
+                <option value="/policies/d104" title="">(D104) Workstation Security</option>
+                <option value="/policies/d105" title="">(D105) Credential Security</option>
+                <option value="/policies/d106" title="">(D106) Email</option>
+                <option value="/policies/d107" title="">(D107) Information Security Governance</option>
+                <option value="/policies/d108" title="">(D108) Information Security Program Roles and Responsibilities</option>
+                <option value="/policies/d109" title="">(D109) Personnel Security Policy</option>
+                <option value="/policies/d110" title="">(D110) Operational Management Policy</option>
+                <option value="/policies/d111" title="">(D111) Stony Brook University Google Apps for Education Acceptable Use and Data Security Policy</option>
+                <option value="/policies/d112" title="">(D112) Electronic Mail (Email) Retention Policy</option>
+                <option value="/policies/d120" title="">(D120) Web Resources</option>
+                <option value="/policies/d121" title="">(D121) Internet Videoconferencing and Virtual Meeting Rooms</option>
+                <option value="/policies/d123" title="">(D123) Domain Name Policy</option>
+                <option value="/policies/HEOA_compliance_plan" title="">Plan to Combat Unlawful Distribution of Copyrighted Materia</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-9">
+        <h2 class="heading">What You Will Find Here</h2>
+          <p>The links to the left detail Stony Brook University policy as it relates to information technology, specifically the use, access and security of IT systems on campus. The Division of Information Technology also concerns itself with supporting the University's obligation to protect the privacy of its student and personnel records by ensuring all personal data is kept confidential.</p>
+          <p>It is the responsibility of each student, faculty and staff member to familiarize themselves with these policies and adhere to them. Any questions or concerns regarding these policies may be directed to the Office of the Chief Information Officer at (631) 632-9085.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shield-footer fluffy">
+    <div class="container">
+        <div class="row">
+
+            {{# listItems.four }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
+                </div>
+            {{/ listItems.four }}
+        </div>
+        <div class="row">
+
+            {{# listItems.three }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
+                </div>
+            {{/ listItems.three }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+.hero-classic {
+  @include hero();
+}
+
+.hero-classic--heading {
+  @include hero--heading();
+}
+
+.hero-classic--navigation {
+  @include hero--navigation();
+}
+
+.hero-classic--buttons {
+  @include hero--buttons();
+}
+
+.hero-classic--content {
+  @include hero--content();
+}
+
+.hero-classic--text {
+  @include hero--text();
+
+}

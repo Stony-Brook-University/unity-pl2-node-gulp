@@ -1,0 +1,121 @@
+/* ---------
+
+Gutter Fix for Pricing Tables (removes padding for children of indicated classes)
+
+---------- */
+
+.pricing-table-attached > .col-lg-4,
+.pricing-table-attached > .col-lg-3,
+.pricing-table-attached > .col-md-4,
+.pricing-table-attached > .col-md-3,
+.pricing-table-attached > .col-sm-4,
+.pricing-table-attached > .col-sm-3 {
+
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+/* ---------
+
+Background Colors
+
+---------- */
+
+.pricing-non-feature {
+background-color: $light-gray;
+}
+
+.pricing-featured {
+background-color: $light-gray;
+}
+
+
+/*============================================================
+PRICING STYLES
+==========================================================*/
+.pricing-table-padding-btm {
+padding-bottom: 50px;
+}
+
+.pricing-table-button {
+display: inline-block;
+padding: 18px 46px;
+border: 2px solid $red;
+border-radius: 3px;
+color: #ffffff;
+font-size: 16px;
+}
+
+.pricing-table-button:hover {
+border: 2px solid $dark-gray;
+border-radius: 3px;
+color: $dark-gray;
+
+}
+
+.pricing-table {
+font-size: 16px;
+margin-bottom: 30px;
+margin-top: 50px;
+text-align: center;
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);;
+color: $dark-gray;
+line-height: 24px;
+}
+
+.pricing-table ul {
+list-style: none;
+margin: 0;
+text-align: left;
+padding:  30px 30px 30px 30px;
+}
+
+.pricing-table ul li {
+
+margin: 20px;
+
+}
+
+.pricing-table ul li i {
+margin-right: 5px;
+}
+
+
+.pricing-table .title {
+background-color: $dark-gray;
+padding: 30px 30px 30px 30px;
+font-size: 36px;
+font-weight: 900;
+color: #FFFFFF;
+}
+
+.pricing-table .secure{
+background-color: $emerald;
+padding: 30px;
+font-weight: 900;
+color: #fff;
+text-transform: uppercase;
+font-size: 24px;
+}
+
+
+.pricing-table .unsecure{
+background-color: $red;
+padding: 30px;
+font-weight: 900;
+color: #fff;
+text-transform: uppercase;
+font-size: 24px;
+}
+
+.pricing-table .pricing-footer {
+padding: 20px;
+}
+
+.pricing-table.popular {
+margin-top: 10px;
+}
+
+

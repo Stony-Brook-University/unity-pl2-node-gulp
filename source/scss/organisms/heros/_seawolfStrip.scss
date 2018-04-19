@@ -1,0 +1,170 @@
+.seawolfStrip .wpb_wrapper {
+  width: 90%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.seawolfStrip .wpb_wrapper span {
+  width: 100%;
+  font-weight: 900;
+  margin: 4px 0;
+ }
+.seawolfStrip .wpb_wrapper span strong {
+  font-weight: 900;
+  clear: left;
+  display: inline-block;
+}
+@media (min-width: 1160px) {
+  .seawolfStrip .wpb_wrapper span {
+    display: inline;
+    margin: 0;
+    float: none;
+    width: auto;
+    font-weight: 900;
+   }
+  .seawolfStrip .wpb_wrapper span strong {
+    font-weight: 900;
+  }
+}
+
+/* Button Margin Fix */
+
+.seawolfStrip .btn {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.seawolfStrip {
+  background: #800000 url('../images/backgrounds/farbeyond-stripes/red-rays-full.jpg') repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 10% 0;
+  margin-bottom: 5rem;
+  z-index: 10; }
+@media (min-width: 800px) {
+  .seawolfStrip {
+    background: #800000 url('../images/backgrounds/farbeyond-stripes/red-rays-full.jpg') repeat top center fixed;
+  }
+}
+  .seawolfStrip::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .seawolfStrip h2, .seawolfStrip h3 {
+    color: #fff; }
+  .seawolfStrip h3 {
+    font-size: 2.3em;
+    line-height: 1; }
+    @media (min-width: 500px) {
+      .seawolfStrip h3 {
+        font-size: 34px;
+      }
+      .seawolfStrip .wpb_wrapper span {
+        margin: 0;
+      }
+    }
+    @media (min-width: 801px) {
+      .seawolfStrip h3 {
+        width: 100%;
+        font-size: 44px;
+      }
+      .seawolfStrip {
+        padding: 7rem
+
+      }
+    }
+    @media (min-width: 1161px) {
+      .seawolfStrip h3 {
+        font-size: 62px; } }
+  .seawolfStrip ul {
+    list-style: none;
+    max-width: 1160px;
+    margin: 15px auto;
+    display: block;
+    float: left; }
+    .seawolfStrip ul li {
+      float: left;
+      width: 100%; }
+      .seawolfStrip ul li a {
+        float: left;
+        display: block;
+        width: 100%;
+        margin-bottom: 9px;
+        font-size: 3vw;
+        font-family: "Effra W01", Helvetica, sans-serif;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #000;
+        color: #fff;
+        font-size: 1.1rem;
+        padding: 0.7rem 0;
+        border: 2px solid #000;
+        }
+        .seawolfStrip ul li a:hover,
+        .seawolfStrip ul li a.active {
+          background: transparent;
+          border-color: #fff;
+        }
+
+  .seawolfStrip .apply-form {
+    display: block;
+    clear: both;
+    padding: 3rem 0 0;
+  }
+  .seawolfStrip .apply-form h4 span {
+    font-family: "Museo Slab W01", "Museo Slab", Gerogia, serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+
+  .seawolfStrip ul {
+    width: 100%; }
+    @media (min-width: 801px) {
+      .seawolfStrip ul {
+        width: 100%; }
+        .seawolfStrip ul li {
+          width: 50%;
+          padding: 0 0.33rem; }
+          .seawolfStrip ul li:first-child,
+          .seawolfStrip ul li:nth-child(3) {
+            padding: 0 0.66rem 0 0;
+          }
+          .seawolfStrip ul li a {; } }
+    @media (min-width: 960px) {
+        .seawolfStrip ul li,
+        .seawolfStrip ul li:first-child,
+        .seawolfStrip ul li:nth-child(3) {
+          width: 25%;
+          padding: 0 0.66rem;
+        }
+        .seawolfStrip ul li:first-child {
+          padding: 0 0.66rem 0 0;
+        }
+        .seawolfStrip ul li:last-child {
+          padding: 0 0 0 0.66rem;
+        }
+    }
+    @media (min-width: 1161px) {
+      .seawolfStrip ul {
+        display: block;
+        padding: 0; } }
+    @media (min-width: 1161px) {
+      .seawolfStrip .apply-form ul {
+        display: block;
+        padding: 0 0 0 0;
+      }
+    }
+    .boldMoves .wpb_wrapper .jumpAwayLink {
+  text-align: right; }
+    .boldMoves .wpb_wrapper .jumpAwayLink {
+  text-align: right; }
+
+@media (max-width: 1160px) {
+  .boldMoves .wpb_wrapper {
+    width: 90%;
+    margin: 0 auto; } }

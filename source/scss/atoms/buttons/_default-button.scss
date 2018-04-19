@@ -1,0 +1,50 @@
+.default-button, a.default-button, .simple-btn, a.simple-btn {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px 18px 10px;
+  font-family: $font;
+  font-weight: normal;
+  font-size: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 2px;
+  @extend .button-trans;
+ /* box-shadow: 0 0 10px #fff;*/
+  background: #900;
+  border: 1px solid #800;
+  color: #fff !important;
+  margin: 0 0 5px 0;
+  position: relative;
+
+  &:hover,
+  &:focus {
+      background: $alt-red;
+      text-decoration: none !important;
+  }
+  &:active {
+      background: #900;
+  }
+}
+
+a.default-button, a.default-button, a.default-button:active, a.simple-btn, a.simple-btn, a.simple-btn:active
+{
+    color: #fff !important;
+}
+
+
+.default-button__white, a.default-button__white {
+  background: $white;
+  border: 2px solid white;
+  color: $red !important;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 2px solid white;
+    color: $white !important;
+  }
+}

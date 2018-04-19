@@ -1,0 +1,67 @@
+/*TEXT REVEAL*/
+
+.reveal-card {
+    @include backface-visibility(hidden);
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    //width: 400px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.reveal-card--overlay {
+    border-bottom: 100px solid $light-red;
+    border-left: 100px solid transparent;
+    bottom: 0;
+    height: 0;
+    opacity: .95;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    @include transition(all 0.5s ease-out);
+    width: 0;
+}
+
+.reveal-card:hover .reveal-card--overlay {
+    border-bottom: 800px solid $light-red;
+    //size must be double container
+    border-left: 800px solid transparent;
+    //size must be double container
+    @include transition(all 0.5s ease-out);
+}
+
+.reveal-card--corner-reveal {
+    bottom: 15px;
+    color: #333;
+    position: absolute;
+    right: 15px;
+    @include transition(all 0.5s ease-out);
+}
+
+.reveal-card:hover .reveal-card--corner-reveal {
+    opacity: 0;
+    @include transition(all 0.5s ease-out);
+}
+
+.reveal-card--reveal-content {
+    bottom: 0;
+    color: #333;
+    left: 0;
+    opacity: 0;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include transition(all 0.3s ease-out);
+    .reveal-card--reveal--heading {
+        border-bottom: 1px solid #333;
+        padding: 0 0 12px;
+    }
+}
+
+.reveal-card:hover .reveal-card--reveal-content {
+    opacity: 1;
+    @include transition(all 0.3s ease-out);
+    @include transition-delay(0.3s);
+}

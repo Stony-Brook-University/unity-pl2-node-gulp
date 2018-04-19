@@ -1,0 +1,40 @@
+<div class="bar-card" data-match-height="bar-card">
+
+    {{# showiframe }}
+    <div class="bar-card--video-container">
+        <iframe class="bar-card--video" src="{{iframe.src}}" allowfullscreen /></iframe>
+    </div>
+    {{/ showiframe }}
+
+    {{# showimg }}
+    <img class="bar-card--image" src="{{img.landscape-16x9.src}}" />
+    {{/ showimg }}
+
+    <h2 class="bar-card--heading">
+
+        {{# showicon }}
+        <span class="bar-card--icon {{icon}}"></span>
+        {{/ showicon }}
+
+        {{ headline.x-small }}</h2>
+
+    <div class="bar-card--content">
+
+        	{{# headline.short }}
+            <h3 class="bar-card--subheading">{{ headline.short }}</h3>
+            {{/ headline.short }}
+
+            <div class="bar-card--text">
+                {{{paragraph.medium}}}
+            </div>
+
+    </div>
+
+
+    {{# cta }}
+    <div class="bar-card--cta">
+        <a href="{{cta.url}}" class="white-button button-block button-center">{{cta.text}}</a>
+    </div>
+    {{/ cta }}
+
+</div>

@@ -1,0 +1,3 @@
+{{# listItems.four }}
+    {{> atoms-landscape-4x3(src:"img.landscape-4x3.src") }}
+{{/ listItems.four }}

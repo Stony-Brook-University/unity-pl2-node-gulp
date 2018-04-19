@@ -1,0 +1,52 @@
+.link-card {
+
+	text-align: left;
+	margin-bottom: 2em;
+	
+	.link-card-icon {
+
+		font-size: 3em;
+		padding: 1em 0;
+		color: $red;
+	}
+
+	.link-card-heading {
+		font-size: 1.3em;
+		color: $dark-gray;
+		
+	}
+
+	.link-card-item {
+
+		@extend .card-item-font;
+		padding: .2em;
+
+	}
+
+	.dashed-link {
+			
+		@extend .dashed-link;
+		color: $dark-gray;
+		border-bottom: .1em dashed #333;
+
+		&:hover,
+		&:focus {
+			
+			color: $red;
+			border-bottom: none;
+				
+		}
+	}
+
+	.view-all {
+
+		@extend .view-all;
+
+        &:hover,
+        &:focus {
+
+            border: .1em solid $dark-gray;
+        }
+
+	}
+}

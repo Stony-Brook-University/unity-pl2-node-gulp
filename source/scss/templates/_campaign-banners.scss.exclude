@@ -1,0 +1,114 @@
+/* Campaign Banners */
+
+.campaign-banner {
+    padding: 3em 0;
+}
+
+.campaign-banner__wrapper {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 5%;
+}
+
+.campaign-banner--on-black {
+    background-image: url("http://stonybrook.edu/sb/far-beyond/img/branding/rays/black-rays-full.jpg");
+    background-position: 50% 40%;
+    background-size: cover;
+}
+
+.campaign-banner--on-red {
+    background-image: url("http://stonybrook.edu/sb/far-beyond/img/branding/rays/red-rays-full.jpg");
+    background-position: 50% 0%;
+    background-size: cover;
+}
+
+    .campaign-banner__logo-image--mobile {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .campaign-banner__logo-image--desktop {
+        display: none;
+    }
+
+    .campaign-banner__tagline {
+        display: block;
+        font-family: "Museo Slab W01", "Times", serif;
+        font-weight: 200;
+        font-style: normal;
+        color: #a69b90;
+        font-size: 1.4em;
+        margin: 1em 0 1.6em;
+    }
+
+    .campaign-banner--on-red .campaign-banner__tagline {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    a.campaign__button {
+        display: inline-block;
+        background: #900;
+        font-family: "Effra W01", "Arial", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        padding: .6em 2.3em;
+        font-size: 1.1em;
+        letter-spacing: .025em;
+    }
+
+    .campaign-banner--on-red a.campaign__button {
+        background: #000;
+    }
+
+@media only screen and (min-width: 560px) {
+    .campaign-banner__logo-image--mobile {
+        display: none;
+    }
+    .campaign-banner__logo-image--desktop {
+        display: block;
+        margin: 0 auto;
+    }
+    .campaign-banner__tagline {
+        text-align: center;
+    }
+    a.campaign-banner__button {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        font-size: 1.4em;
+        width: 170px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .campaign-banner__wrapper {
+        width: 1140px;
+        margin: 0 auto;
+        max-width: 1140px;
+    }
+    .campaign-banner__logo-image--desktop {
+        display: inline-block;
+        float: left;
+        margin: 10px 0;
+    }
+    .campaign-banner__tagline {
+        display: inline-block;
+        float: left;
+        margin: 10px 0 10px 1em;
+        font-size: 1.7em;
+        line-height: 1;
+        border-left: 2px solid #a69b90;
+        padding: 0 0 0 1em;
+
+    }
+    a.campaign-banner__button {
+        float: right;
+        display: block;
+        margin: 0;
+        font-size: 1.25em;
+    }
+}

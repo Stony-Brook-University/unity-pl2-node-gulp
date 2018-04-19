@@ -1,0 +1,59 @@
+@mixin hero() {
+    font-weight: 400;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: 50% 50%;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+}
+
+@mixin hero--heading {
+    color: #fff;
+    margin-top: 0;
+    font-weight: 900;
+}
+
+@mixin hero--navigation {
+  margin: 1em 0;
+
+  a{
+    margin: 0.5em 0;
+  }
+}
+
+@mixin hero--buttons {
+  margin: 1em 0;
+}
+
+@mixin hero--content {
+  margin: 1em 0;
+}
+
+@mixin hero--text {
+  font-size: 1.2em;
+  line-height: 1.2em;
+
+  p {
+    margin-bottom: 1.1em;
+  }
+
+  a {
+    color: $gray;
+    border-bottom: 1px $gray dashed;
+  }
+
+
+  a:hover, a:focus {
+    color: #fff;
+    border-bottom: 1px #fff solid;
+  }
+}

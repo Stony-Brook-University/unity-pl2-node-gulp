@@ -1,0 +1,20 @@
+.top-footer{
+    display: block;
+    border-bottom: 1px solid #aaa;
+    @extend .fluffy;
+
+    position: relative;
+    z-index: 1;
+    h1, h2, h3, h4, h5 {
+        color: #eee;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+}

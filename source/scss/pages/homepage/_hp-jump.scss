@@ -1,0 +1,38 @@
+.jump-links {
+    
+	text-align: center;
+	margin-bottom: 3em;
+	font-size: 1em;
+	color: $dark-gray;
+	border-top: .1em solid $gray;
+	border-bottom: .1em solid $gray;
+
+	p {
+		line-height: 3em;
+	}
+
+	span {
+
+		font-family: 'Times New Roman', serif; 
+		font-size: 1.3em;
+		font-style: italic;
+		color: $gray;
+		margin-right: 1.3em;
+	}
+
+	a {
+
+		color: $dark-gray;
+		padding: .5em;
+		border: .1em solid $dark-gray;
+		margin-right: .5em; 
+
+		&:hover,
+		&:focus, {
+
+			color: $red;
+			border: .1em solid $red;
+		}
+
+	}
+}

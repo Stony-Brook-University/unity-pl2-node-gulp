@@ -1,0 +1,295 @@
+//COLORS
+@each $i in $darkColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+    .bg-#{$colorName}, .background-#{$colorName} {
+        @include section-light-theme;
+        background-color: $colorVar !important;
+    }
+}
+
+@each $i in $lightColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+    .bg-#{$colorName}, .background-#{$colorName} {
+        @include section-dark-theme;
+        background-color: $colorVar !important;
+    }
+}
+
+.bg-fixed {
+  background-attachment: fixed !important;
+}
+
+.bg-focus-top {
+  background-position-y: 0% !important;
+}
+
+.bg-focus-toward-top {
+  background-position-y: 25% !important;
+}
+
+.bg-focus-vcenter {
+  background-position-y: 50% !important;
+}
+
+.bg-focus-toward-bottom {
+  background-position-y: 75% !important;
+}
+
+.bg-focus-bottom {
+  background-position-y: 100% !important;
+}
+
+.bg-focus-left {
+  background-position-x: 0% !important;
+}
+
+.bg-focus-hcenter {
+  background-position-x: 0% !important;
+}
+
+.bg-focus-right {
+  background-position-x: 100% !important;
+}
+
+.bg-focus-center {
+  background-position: 50% 50% !important;
+}
+
+///TEXTURES
+
+.bg-stripes-red {
+    background-image: url("../images/backgrounds/farbeyond-stripes/red-rays-full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-stripes-red-2 {
+    background-image: url("../images/backgrounds/farbeyond-stripes/redSwooshes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.bg-texture-60-lines {
+    background-image: url("../images/backgrounds/textures/60-lines.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-asfalt-light {
+    background-image: url("../images/backgrounds/textures/asfalt-light.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-az-subtle {
+    background-image: url("../images/backgrounds/textures/az-subtle.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-binding-dark {
+    background-image: url("../images/backgrounds/textures/binding-dark.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-black-dots-pattern, .bg-texture-halftone {
+    background-image: url("../../images/backgrounds/textures/black-dots-pattern.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-black-felt {
+    background-image: url("../images/backgrounds/textures/black-felt.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-black-paper {
+    background-image: url("../images/backgrounds/textures/black-paper.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-blu-stripes {
+    background-image: url("../images/backgrounds/textures/blu-stripes.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-bright-squares {
+    background-image: url("../images/backgrounds/textures/bright-squares.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-brushed-alum {
+    background-image: url("../images/backgrounds/textures/brushed-alum.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-brushed-alum-dark {
+    background-image: url("../images/backgrounds/textures/brushed-alum-dark.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-dark-mosaic {
+    background-image: url("../images/backgrounds/textures/dark-mosaic.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-diagmonds {
+    background-image: url("../images/backgrounds/textures/diagmonds.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-diagmonds-light {
+    background-image: url("../images/backgrounds/textures/diagmonds-light.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-egg-shell {
+    background-image: url("../images/backgrounds/textures/egg-shell.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-hexellence {
+    background-image: url("../images/backgrounds/textures/hexellence.png");
+    background-repeat: repeat;
+}
+
+.bg-texture-thin-diagonal-stripe-pattern {
+    background-image: url("../images/backgrounds/textures/thin-diagonal-stripe-pattern.png");
+    background-repeat: repeat;
+}
+
+//PATTERNS
+
+.bg-pattern-lodyas-light {
+    background-image: url("../images/backgrounds/patterns/lodyas-light.jpg");
+    background-repeat: repeat;
+}
+
+.bg-pattern-lodyas {
+    background-image: url("../images/backgrounds/patterns/lodyas.png");
+    background-repeat: repeat;
+}
+
+.bg-pattern-pentagon {
+    background-image: url("../images/backgrounds/patterns/pentagon.png");
+    background-repeat: repeat;
+}
+
+.bg-pattern-starring {
+    background-image: url("../images/backgrounds/patterns/starring.jpg");
+    background-repeat: repeat;
+}
+
+///OVERLAYS
+
+.overlay-gray, .overlay-dark-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red {
+    @include section-light-theme;
+    position: relative;
+}
+
+.overlay-white {
+    @include section-dark-theme;
+    position: relative;
+}
+
+.overlay-black:before {
+    @include section-light-theme;
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-dark-gray:before {
+    @include section-light-theme;
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(20, 20, 20, 0.6);
+}
+
+.overlay-gray:before {
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.overlay-red:before {
+    @include section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(153, 0, 0, 0.5);
+}
+
+.overlay-river:before {
+    @include section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(52, 152, 219, 0.5);
+}
+
+.overlay-turquoise:before {
+    @include section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(26, 188, 156, 0.5);
+}
+
+.overlay-white:before {
+    @include section-light-theme;
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}

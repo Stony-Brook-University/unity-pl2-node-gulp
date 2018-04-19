@@ -1,0 +1,91 @@
+.system-status-heading {
+
+	@extend .card-title;
+	margin-bottom: 2em;
+}
+
+
+.system-status-card {
+
+	border: none;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+	position: relative;
+
+	.sbuicon-close {
+		color: $red;
+	}
+	.sbuicon-exclamation-triangle {
+		color: $sun;
+	}
+	.sbuicon-info {
+		color: $river;
+	}
+	.sbuicon-circle {
+		color: $turquoise;
+	}
+
+
+	a {
+		color: $dark-gray;
+		font-size: 1.1em;
+		border-bottom: .1em $dark-gray;
+
+		&:hover,
+		&:focus {
+			color: $red;
+			border-bottom: none;
+		}
+
+	.system-status-icon {
+
+		position: absolute;
+	    font-size: .5em;
+	    left: 0;
+	    top: 0;
+	    display: block;
+	    margin: 2em;
+
+		}
+	}
+}
+
+.sch-maintenance-card {
+
+	margin-bottom: 2em;
+
+	.sch-maintenance-service {
+
+		@extend .card-subtitle;
+		color: $red;
+
+			&:hover,
+			&:focus {
+
+				color: $dark-gray;
+			}
+
+	}
+
+	.sch-maintenance-time {
+		
+		@extend .card-item-font;
+	}
+
+	.sch-maintenance-items {
+
+		font-size: 1.1em;
+
+
+	
+		li {
+			padding: 1em;
+		}
+
+		li:nth-child(even) {
+			background-color: $light-gray;
+			border-top: .1em solid $gray;
+			border-bottom: .1em solid $gray;
+		}
+	}
+}

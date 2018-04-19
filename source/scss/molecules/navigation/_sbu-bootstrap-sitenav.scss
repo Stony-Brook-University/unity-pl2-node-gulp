@@ -1,0 +1,134 @@
+.sbu-nav {
+    .navbar .container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include breakpoint($screen-md) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    .navbar {
+        height: auto;
+        padding: 0;
+        background: #900;
+        width: 100%;
+        display: block;
+        color: #eee;
+        text-shadow: 0 1px 0 #500;
+        min-height: 47px;
+        z-index: 1000;
+        position: relative;
+        box-shadow: 0px 8px 11px -10px #333;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+    }
+
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: #000;
+    }
+
+    .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar-nav > li {
+        width: auto;
+        text-align: center;
+
+        @include breakpoint($screen-md) {
+            border-left: 1px solid #800;
+            border-right: 1px solid #800;
+        }
+    }
+
+    .navbar-nav > li .dropdown-menu > li {
+        text-align: center;
+        width: auto;
+    }
+
+    .navbar-nav > li > a {
+        width: 100%;
+        height: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .link-common-attributes {
+        text-decoration: none;
+        border: 0px none;
+        color: #EEE;
+        display: block;
+        font-size: 14px;
+        font-family: "Trade Gothic Next W01";
+        font-weight: normal;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 5px #700;
+    }
+
+    .link-common-attributes-focus-hover {
+        color: #F7F7F7;
+        background-color: #222;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        @extend .link-common-attributes;
+        padding: 14px 15px 14px 15px;
+    }
+
+    .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+        background-color: #444;
+        color: #CCC;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        @extend .link-common-attributes-focus-hover;
+    }
+
+    .dropdown-menu {
+        background-color: #900;
+        border-radius: 0px;
+    }
+
+    .dropdown-menu > li > a {
+        color: #EEE;
+    }
+
+    .dropdown-menu .divider {
+        background-color: #800;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+        text-decoration: none;
+        @extend .link-common-attributes-focus-hover;
+    }
+
+    .navbar-nav > li > .dropdown-menu {
+        margin-left: 15px;
+    }
+
+    /* These selectors based on .open are taken from the boostrap defaults to
+     * guarantee that they property override the defaults.
+     */
+    .navbar-nav > li.open > .dropdown-menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        @extend .link-common-attributes;
+        padding: 1em;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        @extend .link-common-attributes-focus-hover;
+    }
+}

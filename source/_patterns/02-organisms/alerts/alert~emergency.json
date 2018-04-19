@@ -1,0 +1,11 @@
+{
+	"alert": {
+		"class" : "emergency",
+		"excerpt" : {
+			"short" : "Emergency! This is a variation of the core homepage template."
+		},
+		"icon" : "sbuicon-warning",
+		"title" : "Emergency! Call an ambulance"
+
+	}
+}

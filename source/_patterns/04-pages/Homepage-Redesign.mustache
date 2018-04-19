@@ -1,0 +1,369 @@
+{{> organisms-alert-bar(backcolor:'bg-emerald', excerpt.short:'All systems reported <a href="#">online</a>. If you are experiencing issues, <a href="#">report a problem now</a>.') }}
+
+{{> molecules-quick-nav}}
+
+<div class="page" id="page">
+	{{> organisms-header }}
+
+    {{> molecules-unity-navbar}}
+
+    {{> organisms-far-beyond-hero}}
+
+
+
+<!-- ===========================================================================
+
+Secondary Navigation
+
+============================================================================ -->
+
+<nav class="fixedNav navbar--fixed navbar--fixed__default noPadding noMarginBottom noBorder">
+  <div class="container">
+    <div class="navbar--fixed__header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixedNavCollapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggle--text">Jump to a Section On This Page &raquo;</span>
+      </button>
+    </div>
+    <div class="collapse navbar--fixed__collapse" id="fixedNavCollapse">
+      <ul class="nav navbar--fixed__links main-nav">
+        <li class="fixed-nav--text hidden-xs hidden-sm">On This Page</li>
+        <li><a href="#blackboardBasics" class="fixedNavLink scrollto">News</a></li>
+        <li><a href="#studentGuide" class="fixedNavLink scrollto">Events & Workshops</a></li>
+        <li><a href="#instructorGuide" class="fixedNavLink scrollto">Services</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===========================================================================
+
+News & Events Sections
+
+============================================================================ -->
+<section class="cozy">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bold-introduction">
+          <h2 class="bold-introduction-heading">
+            Experience IT
+          </h2>
+          <p class="bold-introduction-text">
+            Find out what's happening inside DoIT.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cozy">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+
+            {{> molecules-bold-moves-button(img.square.src:'../../placeholders/images/thumb-square-fire.jpg', headline.short:'New Services Offered', excerpt.medium:'Learn more about DoIT's new services.', excerpt.x-small:'DoIT News', headline.x-small:'Read This Story') }}
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+
+            {{> molecules-bold-moves-button(img.square.src:'../../placeholders/images/thumb-square-yosemite.jpg', headline.short:'New Services Offered', excerpt.medium:'Learn more about DoIT's new services.', excerpt.x-small:'DoIT News', headline.x-small:'Read This Story') }}
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+
+            {{> molecules-bold-moves-button(img.square.src:'../../placeholders/images/thumb-square-gear.jpg', headline.short:'New Services Offered', excerpt.medium:'Learn more about DoIT's new services.', excerpt.x-small:'DoIT News', headline.x-small:'Read This Story') }}
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="divider">
+  <div class="container">
+    <hr class="divider-gray">
+  </div>
+</section>
+
+<section class="cozy">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bold-introduction">
+          <h2 class="bold-introduction-heading">
+            Events & Workshops
+          </h2>
+          <p class="bold-introduction-text">
+            Attend our technology workshops and events to gain valuable skills.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cozy">
+      <div class="row">
+          {{>molecules-event-stamp-buttons}}
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="divider">
+  <div class="container">
+    <hr class="divider-gray">
+  </div>
+</section>
+
+<section class="cozy">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bold-introduction">
+          <h2 class="bold-introduction-heading">
+            Services
+          </h2>
+          <p class="bold-introduction-text">
+            View our services, system status, and scheduled maintenance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cozy">
+      <ul class="pills-tabs">
+        <li class="active"><a href="#tab_a" data-toggle="pill">Services</a></li>
+        <li class=""><a href="#tab_b" data-toggle="pill">System Status</a></li>
+        <li class=""><a href="#tab_c" data-toggle="pill">Scheduled Maintenance</a></li>
+      </ul>
+      <div class="tab-content cozy">
+        <div class="tab-pane active" id="tab_a">
+          <h4 class="heading">SERVICES BY CATEGORY</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="link-card" data-match-height="hsc">
+              <h2 class="link-card--heading">Accounts and Passwords</h2>
+              <ul class="link-card link-card-item">
+                <li><a class=" " href="/services/netid">NetID</a></li>
+                <li><a class=" " href="/services/single-sign-on-sso">Single Sign On (SSO)</a></li>
+                <li><a class=" " href="/services/solar">SOLAR</a></li>
+              </ul>
+            </div>
+          </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Business Systems</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/accessvis">accessVIS</a></li>
+	              <li><a class=" " href="/services/aleph">Aleph</a></li>
+	              <li><a class=" " href="/services/cbase">CBase</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc"  >
+	            <h2 class="link-card--heading">Classrooms and Computer Labs</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/25live">25Live</a></li>
+	              <li><a class=" " href="/services/sinc-sites">SINC Sites</a></li>
+	              <li><a class=" " href="/services/classroom-finder">Classroom Finder</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc"  >
+	            <h2 class="link-card--heading">Email and Collaboration</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/google-apps">Google Apps</a></li>
+	              <li><a class=" " href="/services/electronic-post-office-epo">Electronic Post Office (EPO)</a></li>
+	              <li><a class=" " href="/services/sharepoint-online">SharePoint Online</a></li>
+	            </ul>
+	          </div>
+	        </div>
+				</div>
+				<div class="row">
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Hardware</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/hardware/faculty-staff-computer-support">Faculty/Staff Computer Support</a></li>
+	              <li><a class=" " href="/services/hardware/student-computer-support">Student Computer Support</a></li>
+	              <li><a class=" " href="/services/hardware/mobile-device-support">Mobile Device Support</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Networking Phones and TV</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/wolfienet">WolfieNet</a></li>
+	              <li><a class=" " href="/services/hbo-go">HBO GO</a></li>
+	              <li><a class=" " href="/services/vpn">VPN</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Printing</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/printing">Printing</a></li>
+	              <li><a class=" " href="/services/sinc-sites">SINC Sites</a></li>
+	              <li><a class=" " href="/services/virtual-sinc-site">Virtual SINC Site</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Servers Storage and Backup</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/department-shared-folders">Department Shared Folders</a></li>
+	              <li><a class=" " href="/services/mysbfiles">MySBfiles</a></li>
+	              <li><a class=" " href="/services/virtual-servers">Virtual Servers</a></li>
+	            </ul>
+	          </div>
+	        </div>
+				</div>
+				<div class="row">
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Software</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/onthehubcom">OnTheHub.com</a></li>
+	              <li><a class=" " href="/services/software-catalog">Software Catalog</a></li>
+	              <li><a class=" " href="/services/faculty-staff-software-support">Faculty/Staff Software Support</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Support Services</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/audio-visual-services">Audio Visual Services</a></li>
+	              <li><a class=" " href="/services/client-support-service-center">Client Support Service Center</a></li>
+	              <li><a class=" " href="/services/itsm">ITSM (IT Service Management)</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Teaching and Learning Tools</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/blackboard">Blackboard</a></li>
+	              <li><a class=" " href="/services/lynda">Lynda.com</a></li>
+	              <li><a class=" " href="/services/office-365">Office 365</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-6 col-md-3">
+	          <div class="link-card" data-match-height="hsc">
+	            <h2 class="link-card--heading">Web Services</h2>
+	            <ul class="link-card link-card-item">
+	              <li><a class=" " href="/services/sb-you">SB You</a></li>
+	              <li><a class=" " href="/services/drupal-content-management-system">Drupal Content Management System</a></li>
+	              <li><a class=" " href="/services/yammer">Yammer</a></li>
+	            </ul>
+	          </div>
+	        </div>
+      	</div>
+    	</div>
+
+	    <div class="tab-pane" id="tab_b">
+	      <h4 class="heading">SYSTEM STATUS</h4>
+	      <div class="row">
+	        <div class="col-md-12">
+
+	          <table class="table unity-table">
+	            <thead>
+	              <tr>
+	                <th>System / Service</th>
+	                <th class="text-right">Status</th>
+	              </tr>
+	            </thead>
+	            <tbody>
+	              <tr>
+	                <th>SOLAR</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>Blackboard</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>Google Apps</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>WolfieNet (Wi-Fi)</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>Network (Wired)</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>Talent Management System (TMS)</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>ITSM (Service Management</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>Telephone Systems</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>Virtual SINC Site</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>SB You<</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th>PeopleSoft</th>
+	                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+	              </tr>
+	              <tr>
+	                <th scope="row"><a href="#">View All System Status &raquo;</th>
+	                <th scope="row" class="text-right"><a href="#">Report A Problem &raquo;</th>
+	              </tr>
+	            </tbody>
+	          </table>
+	      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="tab-pane" id="tab_c">
+      <h4 class="heading">SCHEDULED MAINTENANCE</h4>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+      ac turpis egestas.</p>
+    </div>
+  </div>
+</section>
+
+<div class="shield-footer fluffy">
+    <div class="container">
+        <div class="row">
+
+            {{# listItems.four }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
+                </div>
+            {{/ listItems.four }}
+        </div>
+        <div class="row">
+
+            {{# listItems.three }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
+                </div>
+            {{/ listItems.three }}
+        </div>
+    </div>
+</div>

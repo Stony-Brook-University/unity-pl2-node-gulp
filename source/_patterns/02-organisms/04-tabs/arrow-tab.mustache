@@ -1,0 +1,16 @@
+<div class="arrow-tabs nav-tabs-navigation">
+    <div class="nav-tabs-wrapper">
+        <ul class="nav nav-tabs" data-tabs="tabs">
+            {{# listItems.four }}
+            <li><a href="#arrow-tab-{{index}}" data-toggle="tab">{{index}} - {{headline.short}}</a></li>
+            {{/ listItems.four }}
+        </ul>
+        <div class="tab-content">
+            {{# listItems.four }}
+            <div class="tab-pane" id="arrow-tab-{{index}}">
+                <h1>{{index}} - {{headline.short}}</h1> {{{paragraph.double}}}
+            </div>
+            {{/ listItems.four }}
+        </div>
+    </div>
+</div>

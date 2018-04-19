@@ -1,0 +1,141 @@
+.bold-moves-box {
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 190px rgba(0,0,0,0.2) inset;
+  width: 100%;
+  cursor: pointer;
+  transition: all .5s ease;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  height: 420px;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px){
+  .bold-moves-box {
+    margin-bottom: 2em;
+  }
+}
+.bold-moves-box--title {
+  display: block;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 2em 1em;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 0 none;
+  cursor: pointer;
+  height: 100%;
+  overflow: visible;
+  z-index: 1;
+}
+
+.bold-moves-box--title h3 {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-height: 100%;
+  overflow: hidden;;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+  line-height: 1.1em;
+  word-spacing: 0.1em;
+  cursor: pointer;
+}
+
+
+
+.bold-moves-box--story {
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  z-index: 20;
+  /* transition: .3s ease; */
+}
+
+.bold-moves-box--story p {
+  color: #fff;
+  font-size: 1.5em;
+  padding: 1em;
+  line-height: 1.1em;
+  z-index: 1;
+  display: none;
+  font-weight: 400;
+}
+
+.bold-moves-box--story p a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.bold-moves-box--fullStory {
+  font-family: "Effra W01", Helvetica, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $red;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1.5rem 0;
+  border: 2px solid $red;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  z-index: 2;
+}
+
+
+.bold-moves-box--fullStory:hover {
+  background: #D52027;
+  border-color: #D52027;
+  transition: .3s ease all;
+}
+
+
+.bold-moves-box--link:hover {
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  color: #fff;
+}
+
+.bold-moves-box--story p {
+  display: block;
+}
+
+
+.bold-moves-box.bold-moves-box__engaged .bold-moves-box--title h3 {
+  border-bottom: 0 none;
+  padding: 0 0 2.2rem;
+  display: none;
+}
+
+.bold-moves-box.bold-moves-box__engaged .bold-moves-box--title {
+  position: relative;
+}
+
+.bold-moves-box.bold-moves-box__engaged .bold-moves-box--story {
+  -webkit-transform: rotate(0) translate(0, 0);
+  -ms-transform: rotate(0) translate(0, 0);
+  transform: rotate(0) translate(0, 0);
+  top: 0;
+  border-top: none;
+  background: rgba(0, 0, 0, 0.75);
+  left: 0;
+  width: 100%;
+  right: 0;
+  z-index: 2;
+}

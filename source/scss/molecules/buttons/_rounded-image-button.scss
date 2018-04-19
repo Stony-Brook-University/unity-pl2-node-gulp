@@ -1,0 +1,53 @@
+.rounded-image-button {
+    //    border: 1px solid #675757;
+    //    box-shadow: 0 0 10px rgba(103, 87, 87, 0.2);
+    //text-transform: uppercase;
+    //border-radius: 15px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 80%;
+    //margin-bottom: 1em;
+    width: 100%;
+    //max-width: 500px;
+    padding: 60px 15px;
+    display: inline-block;
+    text-shadow: 0 2px 5px #444;
+    color: #fff !important;
+    font-family: 'Trade Gothic W01 Bold 2';
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 15px;
+    margin: 1em 0;
+}
+
+.rounded-image-button:before{
+  border-radius: 15px;
+}
+
+.rounded-image-button--label {
+    color: #fff;
+  //  padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    @include breakpoint($screen-md) {
+        //margin: 22px;
+        font-size: 1.5em;
+    }
+}
+
+.rounded-image-button:hover {
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+}

@@ -1,0 +1,19 @@
+.status-indicator {
+  width: .5em;
+  height: .5em;
+  margin-right: .5em;
+  margin-left: -.5em;
+  margin-bottom: .1em;
+  border-radius: 50%;
+  z-index: 1;
+  display: inline-block;
+ }
+.status-indicator--button {
+  font-size: .5em !important;
+  width: auto;
+  padding: .5em 1em;
+  border-radius: 3px;
+  margin-left: 1em;
+  color: #FFFFFF;
+  display: inline-block;
+}

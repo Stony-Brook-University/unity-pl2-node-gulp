@@ -1,0 +1,29 @@
+.rounded-outline-button,
+.subtle-button {
+
+    display: inline-block;
+    padding: 10px 10px 14px 16px;
+    background: #fff;
+    display: inline-block;
+    font-family: $font;
+    font-size: 1.4em;
+    border: 1px solid $red;
+    border-radius: 15px;
+    text-align: left;
+    margin: 0 1em 1em 0;
+    cursor: pointer;
+    @extend .button-trans;
+
+    &:hover,
+    &:focus {
+    color: $dark-gray;
+    background: $light-gray;
+    border: 1px solid $dark-gray;
+    }
+
+    .icon {
+    display: inline-block;
+    vertical-align: middle;
+     
+    }
+}

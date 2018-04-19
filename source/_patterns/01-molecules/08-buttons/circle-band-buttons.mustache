@@ -1,0 +1,30 @@
+{{> molecules-circle-band-button }}
+
+
+<div class="row">
+    <ul class="list-inline">
+    {{# listItems.four }}
+        <li>
+                {{> molecules-circle-band-button }}
+        </li>
+    {{/ listItems.four }}
+    </ul>
+</div>
+
+<ul class="list-inline">
+    {{# listItems.six }}
+            <li>
+                {{> molecules-circle-band-button(size:"--small") }}
+            </li>
+    {{/ listItems.six }}
+</ul>
+
+<ul class="list-inline">
+    {{# listItems.three }}
+
+    <li>
+        {{> molecules-circle-band-button(size:"--large") }}
+    </li>
+
+    {{/ listItems.three }}
+</ul>

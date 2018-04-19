@@ -1,0 +1,25 @@
+////////////////////////
+// Style File
+//
+// This file gets turned into style.css. This file should really hold nothing except for imports of your base, style guide, layout, and design partials.
+////////////////////////
+@import "global/variables";
+@import "libraries/breakpoint/breakpoint";
+@import "global/mixins";
+@import "libraries/bootstrap/bootstrap";
+@import "global/base";
+@import "libraries/base";
+@import "atoms/base";
+@import "molecules/molecules-base";
+@import "organisms/organisms-base";
+@import "global/themes";
+@import "templates/base";
+@import "pages/base";
+
+
+
+body{
+  background-color: $body-bg;
+
+
+}

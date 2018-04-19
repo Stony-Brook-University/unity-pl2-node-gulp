@@ -1,0 +1,201 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+#sg-patterns {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  max-width: 100%;
+  padding: 0 0.5em;
+}
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sg-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.sg-colors li {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 0.3em;
+  margin: 0 0.5em 0.5em 0;
+  min-width: 5em;
+  max-width: 14em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.sg-swatch {
+  display: block;
+  height: 4em;
+  margin-bottom: 0.3em;
+  border-radius: 5px;
+}
+
+.sg-label {
+  font-size: 90%;
+  line-height: 1;
+}
+
+
+/* added by Rich on 4/19 */
+
+.todo, .todo li {
+  list-style: none;
+  list-style-type: none;
+}
+
+.todo li:before {
+  content: "TODO:";
+  margin-right: 1em;
+}
+
+.icon-exp {
+  padding: .5em;
+  margin-right: .3em;
+  margin-top: .3em;
+  border: 0.1em solid #ccc;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.color-blurb {
+  min-height: 50px;
+  padding: 1em;
+  text-align: center;
+  border-radius: .7em;
+  margin-bottom: .7em;
+}
+
+/* icon catalog */
+ul.icons li {
+  width: 60px;
+  border: 3px solid #ccc;
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+ul.icons li:hover {
+  border: 3px solid #990000;
+}
+
+ul.icons li span:before {
+  font-size: 1.5em;
+}
+
+.overlay-card, .color-card {
+  height: 100px;
+  width: 30%;
+  float: left;
+  margin: 1.5%;
+}
+
+.color-picker li, .overlay-picker li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.padding-picker li {
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #fff;
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.highlightcard {
+  border-width: 5px;
+}
+
+/* this is the floating div with all the class names and fun stuff */
+.class_box {
+  position: fixed;
+  width: 300px;
+  right: 1em;
+  top: 10em;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+  box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+  border: 1px solid gray;
+  z-index: 99999;
+  float: right;
+  text-align: right;
+  display: none;
+  font-weight: bold;
+}
+
+.class_box h2 {
+  background-color: #4D4F53;
+  color: #E3E5DD;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 5px 10px;
+}
+
+.class_box p {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.class_icon {
+  border: 3px solid #4D4F53;
+  text-align: center;
+  padding: 5px 5px 5px 15px;
+  background-color: white;
+}
+
+/* can't use sass here. 
+#hero-example {
+  background-image: url("../../placeholders/images/wolfie-550.jpg");
+  @include breakpoint($break2) {
+      background-image: url("../../placeholders/images/wolfie-1200.jpg");
+  }
+
+  @include breakpoint($break3) {
+      background-image: url("../../placeholders/images/wolfie-1600.jpg");
+  }
+}*/
+
+
+.sg-main{
+  max-width: none !important;
+  padding: 10px;
+}
+
+
+.sg-fixed {
+  max-width: 980px;
+}
+
+
+.sg-component-header {
+  max-width: 1200px;
+  margin: 0 auto 1em;
+
+}

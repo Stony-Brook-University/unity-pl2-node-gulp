@@ -1,0 +1,17 @@
+{{# alert.class}}
+<div class="alert-box__{{alert.class}}">
+{{/ alert.class}}
+{{^ alert.class}}
+<div class="alert-box__notification">
+{{/ alert.class}}
+	<h2 class="alert-box--heading"><span class="{{icon}}"></span>{{headline.medium}}</h2>
+	<div class="alert-box--summary">
+	       {{excerpt.short}}
+	</div>
+
+	 {{# cta }}
+        <div class="alert-box--cta">
+            <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+        </div>
+    {{/ cta }}
+</div>

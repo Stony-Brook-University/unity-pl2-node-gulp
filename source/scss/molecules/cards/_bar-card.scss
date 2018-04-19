@@ -1,0 +1,65 @@
+.bar-card {
+    /* padding: 2em; */
+    margin-bottom: 2em;
+  }
+
+.bar-card--icon {
+    font-size: 1em;
+    display: inline;
+}
+
+.bar-card--image {
+	@extend .card--image;
+	/* padding: 10px; */
+	/* border: 1px solid #eee; */
+	/* margin-bottom: 15px; */
+}
+
+.bar-card--heading {
+    /* @extend .card--heading; */
+    font-weight: 900;
+    line-height: 1em;
+    color: $red;
+    font-size: 1.25em;
+
+}
+
+.bar-card--subheading {
+    @extend .card--subheading;
+    line-height: 1em !important;
+    font-size: 1.1em;
+}
+
+.bar-card--text {
+    /* @extend .card--text; */
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.bar-card--cta {
+    
+    margin-top: 2em;
+}
+
+.bar-card--video-container {
+	@extend .embed-responsive;
+	@extend .embed-responsive-16by9;
+
+    border-bottom: 1em solid $red;
+    margin-bottom: 1em;
+
+}
+
+.bar-card--image {
+    border-bottom: 1em solid $red;
+    margin-bottom: 1em;
+
+}
+
+.bar-card--video {
+	@extend .embed-responsive-item;
+
+	padding: 0;
+	margin-bottom: 15px;
+
+}

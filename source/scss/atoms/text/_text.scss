@@ -1,0 +1,129 @@
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+.font-small {
+    font-size: 0.8em;
+}
+
+body {
+    font-family: $font;
+}
+
+
+
+.font-default{
+  font-family: $font;
+  font-weight: normal;
+}
+
+.font-default--heavy{
+  font-family: $font;
+  font-weight: 900;
+}
+
+.font-default--medium {
+  font-family: $font;
+  font-weight: 500;
+}
+
+.font-default--light {
+  font-family: $font;
+  font-weight: 300;
+}
+
+.italic
+{
+  font-style: italic;
+}
+
+.font-alt{
+  font-family: $font-alt;
+}
+
+.introduction, .intro-text {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+//TODO: kill this
+.intro__pt-50 {
+    position: relative;
+    padding: 50px 0;
+    background-size: cover;
+}
+
+.caps, .cap {
+    text-transform: uppercase;
+}
+
+.proper-case {
+    text-transform: capitalize;
+}
+
+.serif {
+    font-family: $font-alt;
+    font-weight: 400;
+}
+
+.serif-italic {
+    font-family: $font-alt;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.less-spacing {
+    letter-spacing: -0.075em;
+}
+
+.sub-text {
+    font-size: .85em;
+}
+
+.sbu-3d-shadow {
+    -webkit-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+    -moz-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+    text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+}
+
+.sbu-text-shadow {
+    -webkit-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #aaa;
+    -moz-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #aaa;
+    text-shadow: -1px 1px 0 #eee, -2px 2px 2px #aaa;
+}
+
+.font-serif {
+    font-family: "Museo Slab W01", "Museo Slab", Gerogia, serif;
+    font-style: italic;
+}
+
+.font-alt {
+    font-family: "Museo Slab W01", "Museo Slab", Gerogia, serif;
+    line-height: 1.7em;
+}
+
+.font-alt-medium {
+    font-family: "Museo Slab W01", "Museo Slab", Gerogia, serif;
+    font-size: 20px;
+    line-height: 1.7em;
+}
+
+.fancy {
+    font-family: 'CenturyExpandedLTW01-It';
+    text-transform: lowercase;
+    padding: 0 3px 0 0;
+    letter-spacing: .025em;
+}
+
+.bold-introduction-text {
+  font-family: $font-alt;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+
+
+.break-word, a.break-word {
+    word-break: break-all;
+}

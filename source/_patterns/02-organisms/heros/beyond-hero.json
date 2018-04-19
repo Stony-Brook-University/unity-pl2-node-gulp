@@ -1,0 +1,26 @@
+{
+	"headline": {
+		"short" : "Classic Hero Test Title"
+	},
+	"showbuttons" : true,
+  "buttons" : [
+      {
+		"url": "#",
+		"headline": {
+			"short" : "Best winter hikes around the world"
+		}
+	  },
+      {
+		"url": "#",
+		"headline": {
+			"short" : "Sign in to view your dashboard"
+		}
+	  },
+      {
+		"url" : "#",
+		"headline": {
+			"short" : "Learn about our mission"
+		}
+	  }
+    ]
+}

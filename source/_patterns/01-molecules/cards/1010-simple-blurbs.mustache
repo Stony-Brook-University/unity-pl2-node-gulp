@@ -1,0 +1,36 @@
+<div class="alert alert-info">
+    <p>Simple blurbs can tell you a quick and easy story. They will help make your content more readable and scannable for your users. Use them wisely.</p><p>Adding a button or a call to action to your blurb will help users understand what it is you want them to do.</p><p>Subheadings come in handy when you need a quick summary of a rather long blurb.</p>
+</div>
+    {{> molecules-simple-blurb(headline.medium:"Simple Blurbs are Fun!", headline.short:"So many variants") }}
+
+<div class="row">
+
+    {{# listItems.four }}
+        <div class="col-sm-12 col-md-6 col-lg-3">
+                {{> molecules-simple-blurb(showicon:true) }}
+        </div>
+    {{/ listItems.four }}
+
+</div>
+
+
+<div class="row">
+
+    {{# listItems.three }}
+        <div class="col-sm-12 col-md-6 col-lg-4">
+                {{> molecules-simple-blurb(showimg:true) }}
+        </div>
+    {{/ listItems.three }}
+
+</div>
+
+
+<div class="row">
+
+    {{# listItems.two }}
+        <div class="col-sm-12 col-md-6 col-lg-6">
+                {{> molecules-simple-blurb(showiframe:true) }}
+        </div>
+    {{/ listItems.two }}
+
+</div>

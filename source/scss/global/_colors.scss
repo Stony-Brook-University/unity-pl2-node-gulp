@@ -1,0 +1,37 @@
+
+//COLORS
+
+
+@each $i in $darkColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .#{$colorName} {
+        color: $colorVar !important;
+    }
+
+    .#{$colorName}-before:before {
+        color: $colorVar !important;
+    }
+
+    .#{$colorName}-before-children *:before {
+        color: $colorVar !important;
+    }
+}
+
+@each $i in $lightColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .#{$colorName} {
+        color: $colorVar !important;
+    }
+
+    .#{$colorName}-before:before {
+        color: $colorVar !important;
+    }
+
+    .#{$colorName}-before-children *:before {
+        color: $colorVar !important;
+    }
+}

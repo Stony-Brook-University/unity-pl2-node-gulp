@@ -1,0 +1,41 @@
+<div class="stripe-heading-card" data-match-height="stripe-heading-card">
+
+    <h2 class="stripe-heading-card--heading bg-stripes-red" data-match-height="stripe-heading-card--heading">
+
+        {{# showicon }}
+        <span class="stripe-heading-card--icon {{icon}}"></span>
+        {{/ showicon }}
+
+        {{ headline.x-small }}</h2>
+
+    <div class="stripe-heading-card--content" data-match-height="stripe-heading-card--content">
+
+        	{{# headline.short }}
+            <h3 class="stripe-heading-card--subheading">{{ headline.short }}</h3>
+            {{/ headline.short }}
+
+            <div class="stripe-heading-card--text">
+
+                {{# showiframe }}
+                <div class="stripe-heading-card--video-container">
+                    <iframe class="stripe-heading-card--video" src="{{iframe.src}}" allowfullscreen /></iframe>
+                </div>
+                {{/ showiframe }}
+
+                {{# showimg }}
+                <img class="stripe-heading-card--image" src="{{img.landscape-16x9.src}}" />
+                {{/ showimg }}
+
+                {{{paragraph.medium}}}
+            </div>
+
+    </div>
+
+
+    {{# cta }}
+    <div class="stripe-heading-card--cta">
+        <a href="{{cta.url}}" class="white-button button-block button-center"  data-match-height="stripe-heading-card--cta">{{cta.text}}</a>
+    </div>
+    {{/ cta }}
+
+</div>

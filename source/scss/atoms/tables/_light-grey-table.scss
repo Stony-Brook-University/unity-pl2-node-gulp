@@ -1,0 +1,33 @@
+table.light-grey-table {
+    background: #eee;
+    margin: 0 0 20px .5%;
+    border: 8px solid #fff;
+    box-shadow: 0 0 0 1px #900;
+}
+
+.light-grey-table th {
+    font-family: 'Trade Gothic W01 Bold 2';
+    color: #900;
+    text-align: left;
+}
+
+.light-grey-table th,
+.light-grey-table td {
+    font-weight: normal;
+    border-right: 1px solid #bbb;
+    height: 60px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 6px 8px;
+}
+
+table.light-grey-table tbody tr:nth-child(even) {
+    background: #f0f0f0;
+}
+
+table.light-grey-table tbody tr:nth-child(odd) {
+    background: #e3e3e3;
+}
+

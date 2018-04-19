@@ -1,0 +1,44 @@
+.impact-button    {
+    display: inline-block;
+    padding: 12px 7px;
+    background: $red;
+    color: $white;
+    font-family: $font-school-spirit;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 10px 5px 0;
+    @extend .button-trans;
+
+    @include breakpoint($screen-sm) {
+        font-size: 1.2em;
+        //margin: 0 1% 12px;
+    }
+
+    @include breakpoint($screen-md) {
+        margin: 0 .75% 12px;
+        font-size: 1.3em;
+        padding: 16px 12px;
+    }
+
+    @include breakpoint($screen-lg) {
+        font-size: 1.4em;
+    }
+
+    &:hover,
+    &:focus {
+        background: $alt-red;
+        color: $white;
+        text-decoration: none !important;
+    }
+    &:active {
+        background: $red;
+    }
+    &:visited {
+        color: $white;
+    }
+}

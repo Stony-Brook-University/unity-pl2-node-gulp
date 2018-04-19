@@ -1,0 +1,69 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+	{{> molecules-primary-nav}}
+
+
+	<div role="main">
+		{{# emergency }}
+			{{> organisms-alert:emergency }}
+		{{/ emergency }}
+		{{# hero }}
+	       {{> organisms-modern-hero}}
+		{{/ hero}}
+
+		{{# notification }}
+			{{> organisms-alert:notification }}
+		{{/ notification }}
+
+
+
+<section class="fluffy">
+    <div class="container">
+        <div class="row">
+        <div class="drop-accordion-cards">
+         {{# listItems.three }}
+
+                    {{> molecules-drop-accordion-card }}
+
+            {{/ listItems.three }}
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="fluffy">
+    <div class="container">
+        <div class="row">
+
+         {{# listItems.three }}
+                <div class="col-md-4">
+                    {{> molecules-simple-blurb }}
+                </div>
+            {{/ listItems.three }}
+        </div>
+    </div>
+</section>
+
+<section class="fluffy">
+    <div class="container">
+        <div class="row">
+         {{# listItems.three }}
+                <div class="col-md-4">
+                    {{> molecules-classic-blurb }}
+                </div>
+            {{/ listItems.three }}
+        </div>
+    </div>
+</section>
+
+
+
+
+	<!--End role=main-->
+	<footer class="site-footer">
+	{{> organisms-shield-footer }}
+	{{> organisms-bottom-footer }}
+	</footer>
+</div>

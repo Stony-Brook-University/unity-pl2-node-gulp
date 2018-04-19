@@ -1,0 +1,63 @@
+.hero-beyond {
+  background: #800000 url('../images/backgrounds/farbeyond-stripes/red-rays-full.jpg') repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10;
+}
+.hero-beyond__white {
+  background: #800000 url('../images/backgrounds/farbeyond-stripes/whiteSwooshes.jpg') repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10;
+}
+.hero-beyond__black {
+  background: #800000 url('../images/backgrounds/farbeyond-stripes/blackSwooshes.jpg') repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10;
+}
+.hero-beyond--headings
+{
+  margin: 2em 0;
+}
+
+.hero-beyond--subheading {
+  width: 100%;
+  font-weight: 900;
+  margin: 4px 0;
+  color: $white;
+  font-size: 4.6em;
+  line-height: 1;
+}
+
+
+.hero-beyond--text {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: $white;
+}
+
+.hero-beyond--buttons{
+    margin: 2em 0;
+}
+
+.hero-beyond:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.hero-beyond--heading, .hero-beyond--subheading {
+  color: $white;
+}
+
+.hero-beyond--buttons
+{
+  margin-bottom: 3.5em;
+}

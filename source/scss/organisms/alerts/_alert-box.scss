@@ -1,0 +1,29 @@
+.alert-box {
+    color: #fff;
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+
+.alert-box__emergency {
+    @extend .alert-box;
+    background-color: #660000;
+    padding: 2em;
+}
+
+.alert-box__notification {
+    @extend .alert-box;
+    background-color: #000033;
+    padding: 2em;
+}
+
+.alert-box--summary a {
+    color: #ccc;
+    border-bottom: 1px dashed #ccc;
+    text-decoration: none;
+}
+
+.alert-box--summary a:hover, .alert--summary a:focus {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}

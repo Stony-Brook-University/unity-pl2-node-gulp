@@ -1,0 +1,173 @@
+@each $i in $paddingList {
+    $name: nth($i, 1);
+    $value: nth($i, 2);
+    .#{$name} {
+        padding: $value 0;
+    }
+    .#{$name}-row {
+        .row {
+            padding: $value 0;
+        }
+    }
+}
+
+//padding / margin em's
+
+$num: 6;
+$dec: 1;
+
+@while $num >= 0 {
+    .padding-#{$num}em {
+        padding: 1em * $num !important;
+    }
+    .padding-left-#{$num}em {
+        padding-left: 1em * $num !important;
+    }
+    .padding-right-#{$num}em {
+        padding-right: 1em * $num !important;
+    }
+    .padding-top-#{$num}em {
+        padding-top: 1em * $num !important;
+    }
+    .padding-bottom-#{$num}em {
+        padding-bottom: 1em * $num !important;
+    }
+    .margin-#{$num}em {
+        margin: 1em * $num !important;
+    }
+    .margin-left-#{$num}em {
+        margin-left: 1em * $num !important;
+    }
+    .margin-right-#{$num}em {
+        margin-right: 1em * $num !important;
+    }
+    .margin-top-#{$num}em {
+        margin-top: 1em * $num !important;
+    }
+    .margin-bottom-#{$num}em {
+        margin-bottom: 1em * $num !important;
+    }
+    $num: $num - $dec;
+}
+
+//padding / margins pixels
+$num: 100;
+$dec: 10;
+
+@while $num >= 0 {
+    .p-#{$num} {
+        padding: 1px * $num !important;
+    }
+    .pl-#{$num} {
+        padding-left: 1px * $num !important;
+    }
+    .pr-#{$num} {
+        padding-right: 1px * $num !important;
+    }
+    .pt-#{$num} {
+        padding-top: 1px * $num !important;
+    }
+    .pb-#{$num} {
+        padding-bottom: 1px * $num !important;
+    }
+    .ptb-#{$num} {
+        padding-top: 1px * $num !important;
+        padding-bottom: 1px * $num !important;
+    }
+    .m-#{$num} {
+        margin: 1px * $num !important;
+    }
+    .ml-#{$num} {
+        margin-left: 1px * $num !important;
+    }
+    .mr-#{$num} {
+        margin-right: 1px * $num !important;
+    }
+    .mt-#{$num} {
+        margin-top: 1px * $num !important;
+    }
+    .mb-#{$num} {
+        margin-bottom: 1px * $num !important;
+    }
+    $num: $num - $dec;
+}
+
+.block {
+    display: block !important;
+}
+
+
+//from screenshot class originally
+.row.no-pad {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-pad > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+//end from screenshot class
+
+// Display-flex, to be used when aligning items centered relative to each other
+// in bootstrap columns. Will not work on screensizes smaller than 1025px.
+
+.display--flex {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1025px) {
+  .display--flex {
+    display: block;
+  }
+}
+
+// Use display--flex-mobile if you need items to display: flex on mobile screens AND desktop.
+
+.display--flex-mobile {
+  display: flex;
+  align-items: center;
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .no-padding-mobile {
+    padding: 0 !important;
+  }
+  .no-margin-mobile {
+    margin: 0 !important;
+  }
+  .disable-container-mobile {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.section {
+  z-index: 1;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-none {
+    float: none;
+}
+
+.float-right {
+    float: right;
+}
+
+.valign-top {
+    vertical-align: top;
+}

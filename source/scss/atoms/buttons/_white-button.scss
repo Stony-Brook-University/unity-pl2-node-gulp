@@ -1,0 +1,21 @@
+.white-button, a.white-button {
+    border: 2px solid $red;
+    background-color: #fff;
+    color: $red;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 18px 10px;
+    font-family: $font;
+    font-weight: normal;
+    font-size: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    &:hover {
+        color: $dark-red;
+    }
+}

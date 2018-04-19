@@ -1,0 +1,47 @@
+ul.tabs.primary {
+    height: auto;
+    line-height: normal;
+        list-style: none;
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 0;
+}
+
+ul.tabs.primary li {
+    display: inline-block;
+    padding: 0.8em 1.2em 0.8em;
+  font-size: 90%;
+  
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+      list-style: none;
+    list-style-type: none;
+  background-color: #666;
+  border-radius: .25em;
+
+}
+
+ul.tabs.primary li:before
+{
+  display: none;
+  content: '';
+
+}
+
+ul.tabs.primary li.active {
+    background-color: #999;
+}
+
+ul.tabs.primary li a {
+    display: block;
+    color: #fff;
+}
+
+ul.tabs.primary li:hover {
+    background-color: #333;
+}
+
+ul.tabs.primary li:hover a {
+    color: #fff;
+}

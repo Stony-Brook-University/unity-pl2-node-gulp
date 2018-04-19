@@ -1,0 +1,65 @@
+{
+	"headline": {
+		"short": "Classic Hero Test Title"
+	},
+	"shownav": true,
+	"navbuttons": [
+		{
+			"url": "#",
+			"headline": {
+				"short": "Best winter hikes around the world"
+			}
+		},
+		{
+			"url": "#",
+			"headline": {
+				"short": "Sign in to view your dashboard"
+			}
+		},
+		{
+			"url": "#",
+			"headline": {
+				"short": "Learn about our mission"
+			}
+		},
+		{
+			"url": "#",
+			"headline": {
+				"short": "Best winter hikes around the world"
+			}
+		},
+		{
+			"url": "#",
+			"headline": {
+				"short": "Sign in to view your dashboard"
+			}
+		},
+		{
+			"url": "#",
+			"headline": {
+				"short": "Learn about our mission"
+			}
+		}
+	],
+	"showbuttons": true,
+	"buttons": [
+		{
+			"url": "#",
+			"headline": {
+				"short": "Best winter hikes around the world"
+			}
+		},
+		{
+			"url": "#",
+			"headline": {
+				"short": "Sign in to view your dashboard"
+			}
+		},
+		{
+			"url": "#",
+			"headline": {
+				"short": "Learn about our mission"
+			}
+		}
+	]
+}

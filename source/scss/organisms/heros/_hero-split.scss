@@ -1,0 +1,24 @@
+.hero-split {
+  @include hero();
+}
+
+.hero-split--heading {
+    @include hero--heading();
+}
+
+.hero-split--navigation {
+  @include hero--navigation();
+}
+
+.hero-split--buttons {
+  @include hero--buttons();
+}
+
+
+.hero-split--content {
+  @include hero--content();
+}
+
+.hero-split--text {
+  @include hero--text();
+}

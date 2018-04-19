@@ -1,0 +1,55 @@
+.classic-blurb-card {
+
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.classic-blurb-card--icon {
+
+        @extend .card--icon;
+
+        position: absolute;
+        height: 2em;
+        width: 2em;
+        left: 0;
+        top: -.45em;
+        text-align: center;
+        font-size: 3em;
+        display: inline-block;
+        line-height: 1;
+
+}
+
+.classic-blurb-card--image {
+    @extend .card--image;
+
+     width: 200px;
+}
+
+.classic-blurb-card--image-wrap
+{
+    float: left;
+    padding: 0 1em;
+}
+
+.classic-blurb-card--content
+{
+
+        padding-left: 6em;
+}
+
+.classic-blurb-card--heading {
+
+    @extend .card--heading
+}
+
+.classic-blurb-card--subheading {
+
+    @extend .card--subheading
+}
+
+.classic-blurb-card--text {
+
+    @extend .card--text
+
+}

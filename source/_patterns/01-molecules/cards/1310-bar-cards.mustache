@@ -1,0 +1,38 @@
+<div class="alert alert-info">
+    <p>Bar Cards.
+Need from Loren: What about subheadings? And Text?
+    </p>
+</div>
+
+
+<div class="row">
+
+    {{# listItems.four }}
+        <div class="col-sm-12 col-md-6 col-lg-3">
+                {{> molecules-bar-card(showicon:true) }}
+        </div>
+    {{/ listItems.four }}
+
+</div>
+
+
+<div class="row">
+
+    {{# listItems.three }}
+        <div class="col-sm-12 col-md-6 col-lg-4">
+                {{> molecules-bar-card(showimg:true) }}
+        </div>
+    {{/ listItems.three }}
+
+</div>
+
+
+<div class="row">
+
+    {{# listItems.two }}
+        <div class="col-sm-12 col-md-6 col-lg-6">
+                {{> molecules-bar-card(showiframe:true) }}
+        </div>
+    {{/ listItems.two }}
+
+</div>

@@ -1,0 +1,27 @@
+.fc-title {
+  display: block;
+  white-space: normal;
+}
+
+
+.fc-event {
+  background-color: transparent;
+  color: $red;
+  border: 0;
+  margin-bottom: 5px;
+}
+
+.fc-event:hover {
+  color: $dark-red;
+}
+
+
+.fc-today {
+  //background-color: white !important;
+  //border: 5px solid black !important;
+  //border-bottom: 5px solid black !important;
+}
+
+.fc-h-event {
+  border: 1px solid $light-gray;
+}

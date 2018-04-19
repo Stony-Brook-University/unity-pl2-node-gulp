@@ -1,0 +1,8 @@
+
+            <div class="cycler">
+                <img class="active img-responsive" src="http://placehold.it/1440x375&text=Crossfade Effect" alt="Crossfade Effect" />
+                <img class="img-responsive" src="http://placehold.it/1440x375&text=Crossfade Effect 2" alt="Crossfade Effect 2" /> 
+                <img class="img-responsive" src="http://placehold.it/1440x375&text=Crossfade Effect 3" alt="Crossfade Effect 3" /> 
+                <img class="img-responsive" src="http://placehold.it/1440x375&text=Crossfade Effect 4" alt="Crossfade Effect 4" />     
+            </div>
+

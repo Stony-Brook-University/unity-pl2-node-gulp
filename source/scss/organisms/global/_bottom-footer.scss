@@ -1,0 +1,20 @@
+.bottom-footer{
+  padding: 1em 0;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+
+.bottom-footer a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+
+.bottom-footer a:hover, .bottom-footer a:focus {
+    color: $light-gray;
+    border-bottom: 1px solid $light-gray;
+    text-decoration: none;
+
+}

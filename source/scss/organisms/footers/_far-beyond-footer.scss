@@ -1,0 +1,405 @@
+/* farBeyondFooter-nav */
+
+.farBeyondFooter-nav,
+.farBeyondFooter-nav * {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.farBeyondFooter-nav {
+	background: #000;
+	padding: 0 0 20px;
+}
+
+.farBeyondFooter-nav-col {
+	font-size: 1.05em;
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.farBeyondFooter-nav-col + .farBeyondFooter-nav-col {
+	margin-top: 15px;
+}
+
+.farBeyondFooter-nav-col strong,
+.farBeyondFooter-nav-col ul,
+.farBeyondFooter-nav-col ul li {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.farBeyondFooter-nav-col strong {
+	color: #828282;
+	text-transform: uppercase;
+	margin: 8px 0 5px 0;
+	font-family: 'Effra W01', Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 1.05em;
+}
+
+.farBeyondFooter-nav-col strong:after {
+	content: ":";
+}
+
+.farBeyondFooter-nav-col ul {
+	padding-left: 0;
+
+}
+
+.farBeyondFooter-nav-col ul li {;
+	margin: 0 10% 2px 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	min-width: 100%;
+	width: auto;
+}
+
+.farBeyondFooter-nav-col ul li a {
+	display: block;
+	clear: both;
+	cursor: pointer;
+	float: left;
+	width: auto;
+	color: #fff;
+	font-family: 'Effra W01', sans-serif;
+	font-weight: 400;
+	padding: 5px 0 3px 0;
+	border-bottom: 2px solid transparent;
+}
+
+.farBeyondFooter-nav-col ul li a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+@media only screen and (min-width: 400px) {
+	.farBeyondFooter-nav-col {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.farBeyondFooter-nav-wrapper {
+		padding: 20px 0 0 0;
+	}
+	.farBeyondFooter-nav-col {
+		font-size: 1.1em;
+		width: 50%;
+		float: left;
+		padding: 0 2% 5px 0;
+		clear: none;
+		margin-top: 0;
+	}
+
+	.farBeyondFooter-nav-col + .farBeyondFooter-nav-col {
+		margin-top: 0;
+	}
+	.farBeyondFooter-nav-col:nth-child(3),
+	.farBeyondFooter-nav-col:nth-child(4) {
+		padding-top: 15px;
+	}
+	.farBeyondFooter-nav-col ul li {
+		width: 100%;
+	}
+	.farBeyondFooter-nav-col ul li a {
+		float: left;
+		width: auto;
+		padding: 2px 0 2px 0;;
+	}
+	.farBeyondFooter-nav-col strong {
+		margin: 0 0 5px 0;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.farBeyondFooter-nav-col ul li {
+		margin: 0 5.5% 2px 0;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+	.farBeyondFooter-nav-col {
+		width: 25%;
+		padding: 0 2% 5px 0;
+	}
+	.farBeyondFooter-nav-col:nth-child(2),
+	.farBeyondFooter-nav-col:nth-child(3) {
+		padding-right: 2%;
+	}
+	.farBeyondFooter-nav-col:nth-child(3),
+	.farBeyondFooter-nav-col:nth-child(4) {
+		padding-top: 0;
+	}
+}
+
+.farBeyondFooter .farBeyondFooter-nav {
+	background: #fff;
+	padding: 10px 0 0;
+    border-top: 1px solid #ddd;
+    background: #fcfcfc;
+}
+
+@media only screen and (max-width: 1023px) {
+	.farBeyondFooter .farBeyondFooter-nav .wrapper {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.farBeyondFooter .farBeyondFooter-nav-wrapper {
+	width: 100%;
+	padding: 0 5%;
+	float: left;
+}
+
+.farBeyondFooter .farBeyondFooter-nav-col strong {
+	color: #000;
+	margin: 20px 0 5px 0;
+}
+
+.farBeyondFooter .farBeyondFooter-nav-col ul li a {
+	color: #900;;
+	font-weight: 500;
+	padding: 5px 0 3px 0;
+	border-bottom: 2px solid transparent;
+	letter-spacing: 0;
+}
+
+
+.farBeyondFooter .farBeyondFooter-nav-col ul li a:hover {
+	border-bottom: 2px solid #900;
+}
+
+.farBeyondFooter .social-wall-link span {
+	padding: 0 0 3px;
+}
+
+.farBeyondFooter .social-wall-link:hover span {
+	color: #900;
+	border-bottom: 2px solid #900;
+}
+
+.farBeyondFooter .social-footer-items {
+	display: block;
+	width: 100%;
+}
+
+.farBeyondFooter .social-footer-items,
+.farBeyondFooter .social-footer-wrapper {
+	display: block;
+	width: 100%;
+	float: left;
+}
+.farBeyondFooter .social-footer-wrapper {
+	background: transparent;
+	background: #000;
+	margin: 20px 0 0;
+}
+
+.farBeyondFooter .social-footer-wrapper a {
+	background: #000;
+	width: 20%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	font-size: 2em;
+	padding: 15px 0;
+	color: #fff;
+	margin: 0;
+}
+
+.farBeyondFooter .social-footer-wrapper a:hover {
+	background: #900;
+	color: #fff;
+}
+
+.farBeyondFooter .social-footer-wrapper a:hover .fa {
+	color: #fff !important;
+}
+
+.farBeyondFooter .univ-logo-stacked,
+.farBeyondFooter .suny-logo-stacked {
+	display: block;
+	cursor: pointer;
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 25px 0 40px;
+	clear: both;
+}
+
+.farBeyondFooter .univ-logo-stacked img {
+	width: 130px;
+	margin: 0 auto;
+	display: inline-block;
+	float: none;
+	clear: none;
+}
+
+.farBeyondFooter .suny-logo-stacked img {
+	width: 190px;
+	margin: 5px 0 40px;
+}
+
+.farBeyondFooter .social-wall-link {
+	display: block;
+	float: left;
+	width: 100%;
+	color: #000;
+	font-family: "Museo Slab W01", "Museo Slab", Gerogia, serif;
+	font-weight: 300;
+	margin: 5px 0 0;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+/*
+@media only screen and (min-width: 540px) {
+
+	.farBeyondFooter .univ-logo-stacked,
+	.farBeyondFooter .suny-logo-stacked {
+		width: 50%;
+		float: left;
+		display: inline-block;
+		clear: none;
+	}
+
+}
+*/
+
+@media only screen and (min-width: 1024px) {
+	.farBeyondFooter .univ-logo-stacked,
+	.farBeyondFooter .suny-logo-stacked {
+		width: 100%;
+		clear: both;
+		margin: 26px 0 0;
+	}
+	.farBeyondFooter .suny-logo-stacked img {
+		width: 150px;
+		margin: 5px 0 40px;
+	}
+	.farBeyondFooter .farBeyondFooter-nav-wrapper {
+		width: 76%;
+		float: left;
+		padding: 20px 0 40px 0;
+	}
+	.farBeyondFooter .social-footer-items {
+		padding: 45px 0 40px 0;
+		width: 24%;
+		float: left;
+		display: inline-block;
+	}
+	.farBeyondFooter .social-footer-wrapper {
+		background: transparent;
+		margin: 0;
+	}
+	.farBeyondFooter .social-footer-wrapper a {
+		width: 16%;
+		margin: 0px 2%;
+		border: 1px solid #828282;
+		border-radius: 50%;
+		color: #828282;
+		background: #fcfcfc;
+		font-size: 1.2em;
+		padding: 7px 0;
+	}
+	.farBeyondFooter .social-footer-wrapper a:hover,
+	.farBeyondFooter .social-footer-wrapper a:hover * {
+		color: #fff !important;
+		border-color: #900 !important;
+		background: #900 !important;
+	}
+	.farBeyondFooter .social-wall-link {
+		color: #828282;
+		font-size: .9em;
+	}
+	.farBeyondFooter .social-wall-link:hover {
+		color: #900;
+	}
+	.farBeyondFooter .univ-logo-stacked img {
+		width: 133px;
+	    padding-right: 7px;
+	    margin: 11px 0 0 0;
+	}
+}
+
+@media only screen and (min-width: 1160px) {
+	.farBeyondFooter .social-wall-link {
+		font-size: 1.05em;
+	}
+	.farBeyondFooter .social-footer-wrapper a {
+		padding: 11px 0;
+	}
+}
+
+/* New FarBeyond Footer Bar */
+
+.farBeyondFooter-bar-container {
+	background-color: #000;
+	padding: 15px 10px;
+	text-align: center;
+}
+.footer-bar span,
+.footer-bar .item {
+	font-size: 1.02em;
+	color: #eee;
+	font-family:"Museo Slab W01", "Museo Slab", Gerogia, serif;
+	margin: 0 0 4px 0;
+	font-weight: 300;
+}
+
+.footer-bar .policy-links {
+	margin-top: 12px;
+	font-size: .85em;
+}
+
+.footer-bar .policy-links span,
+.footer-bar .policy-links .item {
+	display: inline-block;
+	padding-right: 12px;
+	padding-left: 9px;
+	border-right: 1px solid #aaa;
+	color: #ddd;
+	opacity: .7;
+}
+
+.footer-bar .policy-links span:last-child,
+.footer-bar .policy-links .item:last-child,
+.footer-bar span.last {
+	border-right: 0 none;
+}
+
+.footer-bar span .copyright {
+	display: inline-block;
+	margin: 0;
+}
+
+.footer-bar span a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 auto;
+}
+.footer-bar a.item:hover {
+	text-decoration: underline;
+}
+
+.footer-bar span a.copyright {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 3px;
+	background: transparent;
+	border: 0 none;
+	font-size: inherit;
+}
+
+.logo-wrapper .site-tagline {
+	margin: -4px 0 0 0;
+}

@@ -1,0 +1,84 @@
+.screenshot {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px; height: auto;
+    margin-bottom: 2em;
+}
+
+.screenshot--image {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.screenshot:focus .screenshot--image,
+.screenshot:hover .screenshot--image {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.screenshot--caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: $red;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.screenshot--caption--link {
+    color: #fff;
+}
+
+.screenshot--caption--link:hover,
+.screenshot--caption--link:focus {
+    color: #eeeeee;
+}
+
+.screenshot:hover .screenshot--caption,
+.screenshot:focus .screenshot--caption .screenshots figure:focus figcaption {
+    opacity: 1;
+}
+
+.screenshots figure.cs-hover figcaption {
+    opacity: 1;
+}
+
+.screenshot--icon {
+    font-size: 35px;
+}
+
+.screenshot--content p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.screenshot--caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.screenshot:hover .screenshot--caption-content,
+.screenshot:focus .screenshot--caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}

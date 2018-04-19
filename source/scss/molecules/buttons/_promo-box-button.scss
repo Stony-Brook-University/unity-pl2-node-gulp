@@ -1,0 +1,35 @@
+.promo-box-button {
+    display: inline-block;
+    border: 1px solid #675757;
+    box-shadow: 0 0 10px rgba(103, 87, 87, 0.2);
+    padding: 60px 15px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 80%;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.promo-box-button--label {
+    display: inline-block;
+    font-family: 'Trade Gothic Next W01';
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #fff;
+    max-width: 508px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+}
