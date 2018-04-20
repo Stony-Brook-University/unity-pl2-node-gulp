@@ -3,7 +3,7 @@
 		/* ---------------------------------------------- /*
 		 * CountTo Animation
 		/* ---------------------------------------------- */
-
+    $(document).ready(function(){
 		$('.count-item, .stat-card').each(function() {
 			$(this).appear(function() {
 				var number = $(this).find('.count-to').data('countto');
@@ -67,5 +67,6 @@
 		lightbox.each(function() {
 			$(this).nivoLightbox();
 		});
+	});
 
 })(jQuery);
