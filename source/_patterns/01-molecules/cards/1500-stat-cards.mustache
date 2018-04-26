@@ -2,22 +2,25 @@
     <p>Stat cards are a variant of simple blurb cards, but provide the ability to show stats
 </div>
 
-<div class="row">
 
-    {{# listItems.four }}
-        <div class="col-sm-12 col-md-6 col-lg-3">
-                {{> molecules-stat-card(showicon:true) }}
-        </div>
-    {{/ listItems.four }}
+<div class="container">
+    <div class="row">
 
-</div>
+        {{# listItems.four }}
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                    {{> molecules-stat-card(showicon:true) }}
+            </div>
+        {{/ listItems.four }}
 
-<div class="row">
+    </div>
 
-    {{# listItems.six }}
-        <div class="col-sm-12 col-md-6 col-lg-2">
-                {{> molecules-stat-card(showimage:true, hidetext: true) }}
-        </div>
-    {{/ listItems.six }}
+    <div class="row">
 
+        {{# listItems.six }}
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                    {{> molecules-stat-card(showimage:true, hidetext: true) }}
+            </div>
+        {{/ listItems.six }}
+
+    </div>
 </div>

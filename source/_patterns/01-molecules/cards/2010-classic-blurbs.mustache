@@ -6,23 +6,25 @@
 
 {{> molecules-classic-blurb(showicon:true, headline.medium:"Classic Blurbs Barrels of Monkeys!", headline.short:"So many variants") }}
 
-<div class="row">
+<div class="container">
+    <div class="row">
 
-{{# listItems.three }}
-    <div class="col-sm-12 col-md-6 col-lg-4">
-            {{> molecules-classic-blurb(showicon:true) }}
+    {{# listItems.three }}
+        <div class="col-sm-12 col-md-6 col-lg-4">
+                {{> molecules-classic-blurb(showicon:true) }}
+        </div>
+    {{/ listItems.three }}
+
     </div>
-{{/ listItems.three }}
-
-</div>
 
 
-<div class="row">
+    <div class="row">
 
-{{# listItems.two }}
-    <div class="col-sm-12 col-md-6 col-lg-6">
-            {{> molecules-classic-blurb(showimg:true) }}
+    {{# listItems.two }}
+        <div class="col-sm-12 col-md-6 col-lg-6">
+                {{> molecules-classic-blurb(showimg:true) }}
+        </div>
+    {{/ listItems.two }}
+
     </div>
-{{/ listItems.two }}
-
 </div>

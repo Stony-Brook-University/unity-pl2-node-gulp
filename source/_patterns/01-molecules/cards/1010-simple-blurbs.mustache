@@ -3,34 +3,36 @@
 </div>
     {{> molecules-simple-blurb(headline.medium:"Simple Blurbs are Fun!", headline.short:"So many variants") }}
 
-<div class="row">
+<div class="container">
+    <div class="row">
 
-    {{# listItems.four }}
-        <div class="col-sm-12 col-md-6 col-lg-3">
-                {{> molecules-simple-blurb(showicon:true) }}
-        </div>
-    {{/ listItems.four }}
+        {{# listItems.four }}
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                    {{> molecules-simple-blurb(showicon:true) }}
+            </div>
+        {{/ listItems.four }}
 
-</div>
-
-
-<div class="row">
-
-    {{# listItems.three }}
-        <div class="col-sm-12 col-md-6 col-lg-4">
-                {{> molecules-simple-blurb(showimg:true) }}
-        </div>
-    {{/ listItems.three }}
-
-</div>
+    </div>
 
 
-<div class="row">
+    <div class="row">
 
-    {{# listItems.two }}
-        <div class="col-sm-12 col-md-6 col-lg-6">
-                {{> molecules-simple-blurb(showiframe:true) }}
-        </div>
-    {{/ listItems.two }}
+        {{# listItems.three }}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                    {{> molecules-simple-blurb(showimg:true) }}
+            </div>
+        {{/ listItems.three }}
 
+    </div>
+
+
+    <div class="row">
+
+        {{# listItems.two }}
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                    {{> molecules-simple-blurb(showiframe:true) }}
+            </div>
+        {{/ listItems.two }}
+
+    </div>
 </div>
