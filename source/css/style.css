@@ -5091,8 +5091,7 @@ body {
   margin: 0;
   padding: 0; }
 
-.button-trans, .default-button, .event-card--button, a.default-button, a.event-card--button, .simple-btn, a.simple-btn, .impact-button, .rounded-outline-button,
-.subtle-button, .secondary-button, .hero-button {
+.button-trans, .default-button, .event-card--button, a.default-button, a.event-card--button, .simple-btn, a.simple-btn, .impact-button, .sky-button, .hero-button {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
@@ -15009,18 +15008,7 @@ a.default-button, a.event-card--button, a.default-button, a.event-card--button, 
   text-align: center;
   font-size: 1em;
   cursor: pointer;
-  margin: 0 10px 5px 0; }
-  @media (min-width: 768px) {
-    .impact-button {
-      font-size: 1.2em; } }
-  @media (min-width: 992px) {
-    .impact-button {
-      margin: 0 .75% 12px;
-      font-size: 1.3em;
-      padding: 16px 12px; } }
-  @media (min-width: 1200px) {
-    .impact-button {
-      font-size: 1.4em; } }
+  margin: 0.5em 0 0.5em 0; }
   .impact-button:hover, .impact-button:focus {
     background: #aa0000;
     color: white;
@@ -15030,39 +15018,15 @@ a.default-button, a.event-card--button, a.default-button, a.event-card--button, 
   .impact-button:visited {
     color: white; }
 
-.rounded-outline-button,
-.subtle-button {
+.sky-button {
   display: inline-block;
-  padding: 10px 10px 14px 16px;
-  background: #fff;
-  display: inline-block;
-  font-family: "Effra W01", sans-serif;
-  font-size: 1.4em;
-  border: 1px solid #990000;
-  border-radius: 15px;
-  text-align: left;
-  margin: 0 1em 1em 0;
-  cursor: pointer; }
-  .rounded-outline-button:hover, .rounded-outline-button:focus,
-  .subtle-button:hover,
-  .subtle-button:focus {
-    color: #4b4b4b;
-    background: #bebebe;
-    border: 1px solid #4b4b4b; }
-  .rounded-outline-button .icon,
-  .subtle-button .icon {
-    display: inline-block;
-    vertical-align: middle; }
-
-.secondary-button {
   color: #93e6fa;
   font-family: "Effra W01", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-  display: block;
   padding: 12px 7px;
   text-shadow: none;
-  margin: 0 1% 5px;
+  margin: 0.5em 0 0.5em 0;
   border-radius: 4px;
   text-align: center;
   font-size: 1em;
@@ -15070,11 +15034,12 @@ a.default-button, a.event-card--button, a.default-button, a.event-card--button, 
   background: rgba(24, 140, 223, 0.8);
   border: 1px solid rgba(24, 140, 223, 0.2);
   cursor: pointer; }
-  .secondary-button:hover, .secondary-button:focus {
+  .sky-button:hover, .sky-button:focus {
     background: rgba(24, 140, 223, 0.9);
     border: 1px solid #188cdf;
-    color: #93e6fa; }
-  .secondary-button.selected {
+    color: #93e6fa;
+    text-decoration: none !important; }
+  .sky-button.selected {
     border: 3px solid rgba(128, 219, 240, 0.5);
     padding: 10px 4px; }
 
@@ -15093,7 +15058,8 @@ a.default-button, a.event-card--button, a.default-button, a.event-card--button, 
   margin: 0.5em 0.5em 0.5em 0; }
   .hero-button:hover, .hero-button:focus {
     background-color: #333333;
-    color: white; }
+    color: white;
+    text-decoration: none !important; }
 
 a.hero-button, a.hero-button:visited, a.hero-button:active {
   color: #fff !important; }
@@ -15125,7 +15091,8 @@ a.hero-button, a.hero-button:visited, a.hero-button:active {
   background: rgba(0, 0, 0, 0.4); }
   .icon-button:hover {
     background: rgba(0, 0, 0, 0.8);
-    color: #fff; }
+    color: #fff;
+    text-decoration: none !important; }
 
 .tuxedo-button {
   display: block;

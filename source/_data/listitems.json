@@ -337,11 +337,11 @@
         "audience": "Faculty, Staff, Students",
 		"url": "http://hipsteripsum.me/",
         "cta" :
-        {
-            "url":"#",
-            "text":"Call to Action Text",
-            "class":"subtle-button"
-        },
+        // {
+        //     "url":"#",
+        //     "text":"Call to Action Text",
+        //     "class":"subtle-button"
+        // },
 		"name": {
 			"first": "Duane",
 			"firsti": "D",
