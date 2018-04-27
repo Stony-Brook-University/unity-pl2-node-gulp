@@ -1,0 +1,14 @@
+[ doitcomm_dev ]
+nsCertType              = server
+keyUsage                = digitalSignature,nonRepudiation,keyEncipherment
+extendedKeyUsage        = serverAuth
+subjectKeyIdentifier    = hash
+authorityKeyIdentifier  = keyid,issuer
+subjectAltName          = @doitcomm_dev_subject
+[ doitcomm_dev_subject ]
+DNS.1 = unity-lab.localvm.stonybrook.edu
+DNS.2 = unity-lab.localhost.stonybrook.edu
+DNS.3 = *.localvm.stonybrook.edu
+DNS.4 = *.localhost.stonybrook.edu
+DNS.5 = unity.localvm.stonybrook.edu
+DNS.6 = unity.localhost.stonybrook.edu

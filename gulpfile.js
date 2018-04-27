@@ -10,6 +10,10 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
+  autoprefixer = require('gulp-autoprefixer'),
+  minifycss = require('gulp-clean-css'),
+  bless = require('gulp-bless'),
+  mqRemove = require("gulp-mq-remove"),
   argv = require('minimist')(process.argv.slice(2));
 
 function resolvePath(pathInput) {
@@ -38,8 +42,35 @@ gulp.task('pl-copy:js', function () {
 
 gulp.task('pl-sass', function () {
   return gulp.src(path.resolve(paths().source.scss, '**/*.scss'))
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(path.resolve(paths().source.css)));
+    .pipe(sass({
+      css: paths().public.css,
+      sass: 'scss',
+      fonts: 'fonts',
+      debug: true,
+      style: 'expanded',
+      comments: true,
+      sourceComments: true,
+      sourcemap: false
+    })).on('error', sass.logError)
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(gulp.dest(paths().public.css))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(minifycss())
+    .pipe(gulp.dest(paths().public.css))
+    .pipe(rename({
+      suffix: '.blessed.ie89'
+    }))
+    .pipe(bless())
+    .pipe(gulp.dest(paths().public.css))
+    .pipe(mqRemove({ width: "1280px" }))
+    .pipe(rename({
+      suffix: '.blessed.ie7'
+    }))
+    .pipe(bless())
+    .pipe(gulp.dest(path.resolve(paths().public.css)));
 });
 
 gulp.task('pl-copy:jsheader', function () {
@@ -218,7 +249,18 @@ function watch() {
 gulp.task('patternlab:connect', gulp.series(function (done) {
   browserSync.init({
     server: {
-      baseDir: resolvePath(paths().public.root)
+      baseDir: resolvePath(paths().public.root),
+      middleware: function (req, res, next) {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+      }
+    },
+    host: 'unity-lab.localhost.stonybrook.edu',
+    port: 3000,
+    ghostMode: true,
+    https: {
+      key: ".cert/localdev.DoITComm.key",
+      cert: ".cert/localdev.DoITComm.pem"
     },
     snippetOptions: {
       // Ignore all HTML files within the templates folder
