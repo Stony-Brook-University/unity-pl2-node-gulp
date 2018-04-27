@@ -92,6 +92,7 @@ Task("Clean")
     .Does(() =>
     {
         //CleanDirectory(ngOutputPath);
+        CleanDirectory(buildDir);
         CleanDirectory(publishWebAppDir);
         CleanDirectory(publishDistributableDir);
         CleanDirectory(artifactDir);

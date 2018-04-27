@@ -15,6 +15,7 @@
       "fonts" : "./source/fonts",
       "placeholders" : "./source/placeholders",
       "css" : "./source/css/",
+      "plcss" : "./source/pl-css/",
       "scss" : "./source/scss/"
     },
     "public" : {
@@ -29,7 +30,8 @@
       "images" : "./public/images",
       "fonts" : "./public/fonts",
       "placeholders" : "./public/placeholders",
-      "css" : "./public/css"
+      "css" : "./public/css",
+      "plcss" : "./public/pl-css"
     }
   },
   "styleGuideExcludes": [

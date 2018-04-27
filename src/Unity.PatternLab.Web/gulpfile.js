@@ -92,6 +92,12 @@ gulp.task('pl-copy:jsfooter', function () {
 });
 
 // Images copy
+gulp.task('pl-copy:styleguide-css-customizations', function () {
+  return gulp.src('**/*.*', {cwd: resolvePath(paths().source.plcss)})
+    .pipe(gulp.dest(resolvePath(paths().public.plcss)));
+});
+
+// Images copy
 gulp.task('pl-copy:img', function () {
   return gulp.src('**/*.*', {cwd: resolvePath(paths().source.images)})
     .pipe(gulp.dest(resolvePath(paths().public.images)));
@@ -153,7 +159,7 @@ function build(done) {
 
 gulp.task('pl-assets', gulp.series(
   gulp.parallel(
-    'pl-copy:js',
+
     'pl-copy:jsheader',
     'pl-copy:jsfooter',
     'pl-copy:img',
@@ -162,7 +168,8 @@ gulp.task('pl-assets', gulp.series(
     'pl-copy:placeholders',
     gulp.series('pl-sass', 'pl-copy:css', function (done) {done();}),
     'pl-copy:styleguide',
-    'pl-copy:styleguide-css'
+    'pl-copy:styleguide-css',
+    'pl-copy:styleguide-css-customizations'
   ),
   function (done) {
     done();
@@ -236,6 +243,7 @@ function watch() {
     resolvePath(paths().source.images) + '/*',
     resolvePath(paths().source.jsheader) + '/**/*.js',
     resolvePath(paths().source.jsfooter) + '/**/*.js',
+    resolvePath(paths().source.plcss) + '/**/*.css',
     resolvePath(paths().source.placeholders) + '/*',
     resolvePath(paths().source.meta) + '/*',
     resolvePath(paths().source.annotations) + '/*'
@@ -259,8 +267,8 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
     port: 3000,
     ghostMode: true,
     https: {
-      key: ".cert/localdev.DoITComm.key",
-      cert: ".cert/localdev.DoITComm.pem"
+      key: "../../.cert/localdev.DoITComm.key",
+      cert: "../../.cert/localdev.DoITComm.pem"
     },
     snippetOptions: {
       // Ignore all HTML files within the templates folder
