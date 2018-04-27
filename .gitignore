@@ -6,3 +6,7 @@ patternlab.json
 Thumbs.db
 .idea/
 public
+
+/publish/
+/artifacts/
+/tools/
