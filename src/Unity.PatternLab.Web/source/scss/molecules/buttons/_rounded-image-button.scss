@@ -1,3 +1,5 @@
+@import "_blur.scss";
+
 .rounded-image-button {
     //    border: 1px solid #675757;
     //    box-shadow: 0 0 10px rgba(103, 87, 87, 0.2);
@@ -46,8 +48,5 @@
 }
 
 .rounded-image-button:hover {
-    border-radius: 15px;
-    -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+    @extend %blur;
 }

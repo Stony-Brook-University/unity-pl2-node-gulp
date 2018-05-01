@@ -1,3 +1,5 @@
+@import "_blur.scss";
+
 .promo-box-button {
     display: inline-block;
     border: 1px solid #675757;
@@ -35,8 +37,6 @@
 }
 
 .promo-box-button:hover {
-    border-radius: 15px;
-    -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+    @extend %blur;
 }
+
