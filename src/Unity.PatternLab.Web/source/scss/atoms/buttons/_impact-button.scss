@@ -14,20 +14,20 @@
     margin: 0.5em 0 0.5em 0;
     @extend .button-trans;
 
-    // @include breakpoint($screen-sm) {
-    //     font-size: 1.2em;
-    //     margin: 0 1% 12px;
-    // }
+    @include breakpoint($screen-sm) {
+        font-size: 1.2em;
+        margin: 0 1% 12px;
+    }
        
-    // @include breakpoint($screen-md) {
-    //     margin: 0 .75% 12px;
-    //     font-size: 1.3em;
-    //     padding: 16px 12px;
-    // }
+    @include breakpoint($screen-md) {
+        margin: 0 .75% 12px;
+        font-size: 1.3em;
+        padding: 16px 12px;
+    }
     
-    // @include breakpoint($screen-lg) {
-    //     font-size: 1.4em;
-    // }
+    @include breakpoint($screen-lg) {
+        font-size: 1.4em;
+    }
 
     &:hover,
     &:focus {
