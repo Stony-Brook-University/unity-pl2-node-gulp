@@ -2,32 +2,6 @@
     display: inline-block;
     background: rgba(51, 51, 51, 0.8);
     padding: 1em;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: rgba(255, 255, 255, 0.5);
-    box-sizing: inherit;
-    cursor: pointer;
-    font-family: $font;
-    @extend .button-trans;
-    zoom: 1;
-    color: $white;
-    margin: 0.5em 0.5em 0.5em 0;
-    &:hover,
-    &:focus {
-        background-color: rgba(51, 51, 51, 1);
-        color: $white;
-    }
-}
-
-a.hero-button, a.hero-button:visited, a.hero-button:active
-{
-    color: #fff !important;
-}
-
-.hero-button {
-    display: inline-block;
-    background: rgba(51, 51, 51, 0.8);
-    padding: 1em;
     text-transform: uppercase;
     border-bottom: rgba(255, 255, 255, 0.5);
     box-sizing: inherit;
@@ -41,11 +15,11 @@ a.hero-button, a.hero-button:visited, a.hero-button:active
     &:focus {
         background-color: rgba(51, 51, 51, 1);
         color: $white;
+        text-decoration: none;
     }
 }
 
 a.hero-button, a.hero-button:visited, a.hero-button:active
 {
     color: #fff !important;
-
 }

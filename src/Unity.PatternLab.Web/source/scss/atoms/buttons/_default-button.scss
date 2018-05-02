@@ -7,8 +7,8 @@
   font-family: $font;
   font-weight: normal;
   font-size: inherit;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 700;
   cursor: pointer;
   border-radius: 2px;
@@ -23,7 +23,6 @@
   &:hover,
   &:focus {
       background: $alt-red;
-      text-decoration: none !important;
   }
   &:active {
       background: #900;
