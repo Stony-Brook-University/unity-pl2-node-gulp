@@ -23,6 +23,7 @@
 }
 
 a.polaroid-card:hover {
+    text-decoration: none;
     -webkit-box-shadow: 0px 0px 8px $red;
     box-shadow: 0px 0px 8px $red;
 }
