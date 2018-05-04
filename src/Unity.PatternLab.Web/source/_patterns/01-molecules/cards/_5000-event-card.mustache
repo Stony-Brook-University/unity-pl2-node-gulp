@@ -1,8 +1,9 @@
 <div class="event-card" data-match-height="event-card">
-
-  <div class="event-card--heading" data-match-height="event-card--heading-wrap">
-      <a class="event-card--heading-link" href="{{url}}">{{headline.short}}</a>
-  </div>
+  <a class="event-card--heading-link" href="{{url}}">
+    <div class="event-card--heading" data-match-height="event-card--heading-wrap">
+      {{headline.short}}
+    </div>
+  </a>
   <div class="event-card--content" data-match-height="event-card--content">
 
     {{# location }}
