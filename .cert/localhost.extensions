@@ -1,0 +1,15 @@
+[ localhost_dev ]
+nsCertType              = server
+keyUsage                = digitalSignature,nonRepudiation,keyEncipherment
+extendedKeyUsage        = serverAuth
+subjectKeyIdentifier    = hash
+authorityKeyIdentifier  = keyid,issuer
+subjectAltName          = @localhost_dev_subject
+[ localhost_dev_subject ]
+DNS.1 = localhost
+DNS.2 = *.localhost
+DNS.3 = 127.0.0.1
+DNS.4 = dev.localhost
+DNS.5 = *.dev.localhost
+DNS.6 = local.localhost
+DNS.7 = *.local.localhost

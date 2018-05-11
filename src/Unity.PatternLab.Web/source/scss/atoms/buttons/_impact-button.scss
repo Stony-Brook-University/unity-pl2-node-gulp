@@ -33,7 +33,7 @@
     &:focus {
         background: $alt-red;
         color: $white;
-        text-decoration: none !important;
+        text-decoration: none;
     }
     &:active {
         background: $red;
