@@ -16,6 +16,9 @@
     text-transform: uppercase;
     background-color: $red;
     padding: 1em;
+    &:hover{
+      background-color:$alt-red;
+    }
 }
 .event-card--heading-link, a.event-card--heading-link {
   color: $white;
@@ -24,6 +27,7 @@
   &:focus {
     color: $white;
     transition: .3s ease all;
+    text-decoration: none;
   }
   &:visited {
     color: $white;
