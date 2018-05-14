@@ -166,7 +166,7 @@ gulp.task('pl-assets', gulp.series(
     'pl-copy:favicon',
     'pl-copy:font',
     'pl-copy:placeholders',
-    gulp.series('pl-sass', 'pl-copy:css', function (done) {done();}),
+    
     'pl-copy:styleguide',
     'pl-copy:styleguide-css',
     'pl-copy:styleguide-css-customizations'
@@ -232,6 +232,7 @@ function reloadCSS() {
 }
 
 function watch() {
+  gulp.watch(resolvePath(paths().source.scss) + '/**/*.scss', { awaitWriteFinish: true }).on('change', gulp.series('pl-sass', reloadCSS));
   gulp.watch(resolvePath(paths().source.css) + '/**/*.css', { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
   gulp.watch(resolvePath(paths().source.styleguide) + '/**/*.*', { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS));
 
@@ -267,8 +268,8 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
     port: 3000,
     ghostMode: true,
     https: {
-      key: "../../.cert/localdev.DoITComm.key",
-      cert: "../../.cert/localdev.DoITComm.pem"
+      key: "../../.cert/localhost.key",
+      cert: "../../.cert/localhost.pem"
     },
     snippetOptions: {
       // Ignore all HTML files within the templates folder
@@ -301,6 +302,6 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
 /******************************************************
  * COMPOUND TASKS
 ******************************************************/
-gulp.task('default', gulp.series('patternlab:build'));
-gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
+gulp.task('default', gulp.series('pl-sass', 'patternlab:build'));
+gulp.task('patternlab:watch', gulp.series('pl-sass', 'patternlab:build', watch));
 gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connect', watch));

@@ -53,6 +53,8 @@
         transform: rotate(-30deg);
     }
 
+   
+
 }
 
 
@@ -87,7 +89,10 @@
     }
 }
 
-
+a.circle-band-button:hover, a.circle-band-button:focus {
+    text-decoration: none;
+}
 .circle-band-button:hover .circle-band-button--label {
-    background-color: rgba(51, 204, 204, 0.6);
+    background-color: rgba(51, 204, 204, 1);
+    text-decoration: none;
 }

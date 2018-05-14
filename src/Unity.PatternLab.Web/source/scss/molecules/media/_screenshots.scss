@@ -36,11 +36,13 @@
 
 .screenshot--caption--link {
     color: #fff;
+    text-decoration: none;
 }
 
 .screenshot--caption--link:hover,
 .screenshot--caption--link:focus {
     color: #eeeeee;
+    text-decoration: none;
 }
 
 .screenshot:hover .screenshot--caption,

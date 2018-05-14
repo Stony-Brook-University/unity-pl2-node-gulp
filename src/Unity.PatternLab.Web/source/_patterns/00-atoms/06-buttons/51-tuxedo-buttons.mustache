@@ -1,0 +1,18 @@
+<div class="alert alert-info">
+    <p>Tuxedo buttons are mean't to be used on top of backgrounds as they revert to a transparent background on focus/hover</p>
+</div>
+
+    {{> atoms-tuxedo-button(headline.short:"Tuxedo Buttons are Fun!") }}
+
+<div class="container">
+    <div class="row cozy" style="background-color: #990000">
+
+
+        {{# listItems.four }}
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                    {{> atoms-tuxedo-button(showicon:true) }}
+            </div>
+        {{/ listItems.four }}
+
+    </div>
+</div>

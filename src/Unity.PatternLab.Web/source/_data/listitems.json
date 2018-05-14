@@ -336,12 +336,6 @@
         "location": "West Campus - Earth & Space Sciences Building - Room: 001",
         "audience": "Faculty, Staff, Students",
 		"url": "http://hipsteripsum.me/",
-        "cta" :
-        // {
-        //     "url":"#",
-        //     "text":"Call to Action Text",
-        //     "class":"subtle-button"
-        // },
 		"name": {
 			"first": "Duane",
 			"firsti": "D",
@@ -352,9 +346,9 @@
 		},
         "stat" : {
 	        "number": "56.22",
-	       "presymbol": "$",
-	       "postsymbol": false
-       },
+	    	"presymbol": "$",
+	    	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -448,9 +442,9 @@
 		},
         "stat" : {
             "number": "100",
-           "presymbol": false,
-           "postsymbol": "%"
-       },
+        	"presymbol": false,
+        	"postsymbol": "%"
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -543,9 +537,9 @@
 		},
         "stat" : {
             "number": "35",
-           "presymbol": false,
-           "postsymbol": false
-       },
+        	"presymbol": false,
+        	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -634,9 +628,9 @@
 		},
         "stat" : {
             "number": "90",
-           "presymbol": false,
-           "postsymbol": false
-       },
+        	"presymbol": false,
+        	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -727,9 +721,9 @@
 		},
         "stat" : {
             "number": "1035",
-           "presymbol": false,
-           "postsymbol": false
-       },
+        	"presymbol": false,
+        	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -819,9 +813,9 @@
 		},
         "stat" : {
             "number": "0",
-           "presymbol": false,
-           "postsymbol": false
-       },
+        	"presymbol": false,
+        	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -913,9 +907,9 @@
 		},
         "stat" : {
             "number": "99",
-           "presymbol": false,
-           "postsymbol": false
-       },
+        	"presymbol": false,
+        	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -1008,9 +1002,9 @@
 		},
         "stat" : {
             "number": "50",
-           "presymbol": false,
-           "postsymbol": false
-       },
+        	"presymbol": false,
+        	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -1100,9 +1094,9 @@
 		},
         "stat" : {
             "number": "35",
-           "presymbol": false,
-           "postsymbol": false
-       },
+        	"presymbol": false,
+        	"postsymbol": false
+    	},
 		"year": {
 			"long": "2013",
 			"short": "13"
