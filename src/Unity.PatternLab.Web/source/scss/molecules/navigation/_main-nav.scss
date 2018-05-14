@@ -1,3 +1,5 @@
+@import '../../global/_extendables.scss';
+
 .main-site-nav-wrap {
     background-color: #990000;
     width: 100%;
@@ -136,7 +138,7 @@
             li.expanded > a:after {
                 @include breakpoint($screen-lg) {
                     //TODO: FIGURE THIS OUT
-                    //@extend .sbuicon;
+                    @extend .sbuicon;
                     content: "\edc6";
                     margin-left: 5px;
                     top: 1px;
